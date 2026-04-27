@@ -1,44 +1,47 @@
 <?php
+
 /**
  * Template Name: Inicio Transparencia
  */
 get_header();
 ?>
-<section class="bg-navy-900 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
-        <p class="font-ui text-navy-300 text-base font-semibold uppercase tracking-[0.18em] mb-5">
-            Universidad Nacional de San Luis
-        </p>
-        <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-8">
-            Portal de<br class="hidden sm:block" /> Transparencia
-        </h1>
-        <!--div class="w-14 h-[3px] bg-navy-400 mb-8 rounded-full"></div-->
-        <div class="font-sans text-navy-200 text-base sm:text-lg leading-relaxed space-y-5 max-w-7xl">
-            <p>
-                La Universidad Nacional de San Luis (UNSL) pone a disposición de la comunidad su Portal de Transparencia, en el marco de lo establecido por la 
-                <a href="https://www.argentina.gob.ar/normativa/nacional/ley-27275-265949" target="_blank" rel="noopener noreferrer" class="text-navy-300 underline underline-offset-2 decoration-navy-500 hover:text-white hover:decoration-navy-300 transition-colors">
-                    Ley Nº 27.275 de Acceso a la Información Pública
-                </a>, 
-                cuyo objetivo es garantizar el derecho de acceso a la información pública, promover la participación ciudadana y fortalecer la transparencia en la gestión pública.
-            </p>
-            <p>
-                Este Portal ofrece un acceso claro, estructurado y comprensible a la información institucional, eliminando barreras que dificulten su consulta y reutilización por parte de la ciudadanía.
-            </p>
-            <p>
-                Asimismo, la iniciativa se enmarca en los principios de Gobierno Abierto, promoviendo la rendición de cuentas y el vínculo entre la universidad y la sociedad. A tal fin, el portal se organiza en torno a ejes como la transparencia activa, la transparencia proactiva, los datos abiertos y el acceso a la información pública, consolidándose como un espacio que facilita el conocimiento de las acciones y políticas llevadas adelante por la institución.
-            </p>
-        </div>
-    </div>
+<section class="bg-navy-900 py-20 relative h-screen sm:py-28">
+
+    <img class="absolute size-full left-0 object-cover  object-center top-0 z-0" src="http://192.168.103.3/wp-content/themes/Carreras-UNSL/imagenes/carreras.jpg" alt="">
+    <div class="bg-gradient-to-r from-[#11153B] to-[#003D54]/50 absolute z-1 size-full left-0 top-0"></div>
+    <h1 class=" flex justify-start max-w-7xl top-[40%] px-6 mx-auto text-5xl sm:text-7xl text-[#A8C8F4] z-10 relative  font-bold mb-8">
+        PORTAL <br> DE TRANSPARENCIA
+    </h1>
+
 </section>
 
-<section class="bg-stone-50 py-20 sm:py-24 border-t border-stone-200">
-    <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
-        <p class="font-ui text-stone-500 text-base font-semibold uppercase  mb-10">
-            BOTONES DE SECCIONES
+<div class="max-w-7xl mx-auto relative text-black z-10 px-6 sm:px-10 lg:px-12">
+
+
+    <!--div class="w-14 h-[3px] bg-navy-400 mb-8 rounded-full"></div-->
+    <div class="font-sans py-12 text-base sm:text-lg  space-y-5 max-w-7xl">
+        <p>
+            La Universidad Nacional de San Luis (UNSL) pone a disposición de la comunidad su Portal de Transparencia, en el marco de lo establecido por la
+            <a href="https://www.argentina.gob.ar/normativa/nacional/ley-27275-265949" target="_blank" rel="noopener noreferrer" class="text-navy-300 underline underline-offset-2 decoration-navy-500 hover:text-white hover:decoration-navy-300 transition-colors">
+                Ley Nº 27.275 de Acceso a la Información Pública
+            </a>,
+            cuyo objetivo es garantizar el derecho de acceso a la información pública, promover la participación ciudadana y fortalecer la transparencia en la gestión pública.
         </p>
+        <p>
+            Este Portal ofrece un acceso claro, estructurado y comprensible a la información institucional, eliminando barreras que dificulten su consulta y reutilización por parte de la ciudadanía.
+        </p>
+        <p>
+            Asimismo, la iniciativa se enmarca en los principios de Gobierno Abierto, promoviendo la rendición de cuentas y el vínculo entre la universidad y la sociedad. A tal fin, el portal se organiza en torno a ejes como la transparencia activa, la transparencia proactiva, los datos abiertos y el acceso a la información pública, consolidándose como un espacio que facilita el conocimiento de las acciones y políticas llevadas adelante por la institución.
+        </p>
+    </div>
+</div>
+
+<section class="bg-stone-50 py-12 botones    border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
+
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
 
-            <a href="#" class="card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
+            <a href="<?php echo home_url('/transparencia-activa'); ?>" class="card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
                 <!--div class="h-1 w-full bg-navy-700 group-hover:bg-navy-500 transition-colors duration-200"></div-->
                 <div class="p-7 flex flex-col flex-1">
                     <div class="mb-5 text-stone-300 text-sm font-semibold tracking-wider">
@@ -47,13 +50,13 @@ get_header();
                     <h3 class="font-ui text-base font-semibold text-navy-900 group-hover:text-navy-600 transition-colors mb-3 leading-snug">
                         Transparencia Activa
                     </h3>
-                    <p class="font-sans text-sm text-stone-500 leading-relaxed flex-1">
+                    <p class="font-sans text-sm text-stone-500  flex-1">
                         Información puesta a disposición de la comunidad en cumplimiento del Artículo 32 de la Ley 27.275
                     </p>
                 </div>
             </a>
 
-            <a href="#" class="card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
+            <a href="<?php echo home_url('/transparencia-proactiva'); ?>" class="card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
                 <!--div class="h-1 w-full bg-navy-700 group-hover:bg-navy-500 transition-colors duration-200"></div-->
                 <div class="p-7 flex flex-col flex-1">
                     <div class="mb-5 text-stone-300 text-sm font-semibold tracking-wider">
@@ -62,13 +65,13 @@ get_header();
                     <h3 class="font-ui text-base font-semibold text-navy-900 group-hover:text-navy-600 transition-colors mb-3 leading-snug">
                         Transparencia Proactiva
                     </h3>
-                    <p class="font-sans text-sm text-stone-500 leading-relaxed flex-1">
+                    <p class="font-sans text-sm text-stone-500  flex-1">
                         Información relevante relacionada a la gestión institucional no comprendida en el Artículo 32 de la Ley 27.275
                     </p>
                 </div>
             </a>
 
-            <a href="#" class="card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
+            <a href="<?php echo home_url('/portal-de-datos-abiertos'); ?>" class="card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
                 <!--div class="h-1 w-full bg-navy-700 group-hover:bg-navy-500 transition-colors duration-200"></div-->
                 <div class="p-7 flex flex-col flex-1">
                     <div class="mb-5 text-stone-300 text-sm font-semibold tracking-wider">
@@ -77,13 +80,13 @@ get_header();
                     <h3 class="font-ui text-base font-semibold text-navy-900 group-hover:text-navy-600 transition-colors mb-3 leading-snug">
                         Portal de Datos Abiertos
                     </h3>
-                    <p class="font-sans text-sm text-stone-500 leading-relaxed flex-1">
+                    <p class="font-sans text-sm text-stone-500  flex-1">
                         Conjuntos de datos publicados en formato abierto y reutilizables para ser usados por la comunidad para diferentes objetivos.
                     </p>
                 </div>
             </a>
 
-            <a href="#" class="card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
+            <a href="<?php echo home_url('/solicitud-de-informacion'); ?>" class="card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
                 <!--div class="h-1 w-full bg-navy-700 group-hover:bg-navy-500 transition-colors duration-200"></div-->
                 <div class="p-7 flex flex-col flex-1">
                     <div class="mb-5 text-stone-300 text-sm font-semibold tracking-wider">
@@ -92,7 +95,7 @@ get_header();
                     <h3 class="font-ui text-base font-semibold text-navy-900 group-hover:text-navy-600 transition-colors mb-3 leading-snug">
                         Solicitud de Información
                     </h3>
-                    <p class="font-sans text-sm text-stone-500 leading-relaxed flex-1">
+                    <p class="font-sans text-sm text-stone-500  flex-1">
                         Consultas de la comunidad respecto de la Información Pública aún no abierta en las otras secciones.
                     </p>
                 </div>
@@ -112,7 +115,7 @@ get_header();
                 <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy-900 leading-tight">
                     Responsables de la Política de Transparencia en la UNSL
                 </h2>
-                <p class="font-sans text-stone-500 text-sm mt-4 leading-relaxed">
+                <p class="font-sans text-stone-500 text-sm mt-4 ">
                     En caso de alguna duda respecto de la información aquí publicada podés contactarte:
                 </p>
             </div>
@@ -150,7 +153,7 @@ get_header();
     </div>
 </section>
 
-<section class="bg-navy-950 py-20 sm:py-24">
+<section class="bg-navy-950 reclamos py-20 sm:py-24">
     <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 items-start">
             <div>
@@ -163,28 +166,28 @@ get_header();
             </div>
             <div class="lg:col-span-2 space-y-6">
                 <div class=" pl-6">
-                    <p class="font-sans text-navy-200 text-base leading-relaxed">
-                        La Agencia de Acceso a la Información Pública (AAIP) es el órgano garante de las Políticas de Transparencia de los organismos. Para realizar un reclamo por falta de respuesta podés 
+                    <p class="font-sans text-navy-200 text-base ">
+                        La Agencia de Acceso a la Información Pública (AAIP) es el órgano garante de las Políticas de Transparencia de los organismos. Para realizar un reclamo por falta de respuesta podés
                         <a href="https://www.argentina.gob.ar/servicio/reclamar-por-incumplimiento-de-una-solicitud-de-acceso-la-informacion-publica" target="_blank" rel="noopener noreferrer" class="text-navy-300 underline underline-offset-2 decoration-navy-600 hover:text-white hover:decoration-navy-400 transition-colors">
                             ingresar aquí
                         </a>.
                     </p>
                 </div>
-                
+
                 <div class="bg-navy-900 border border-navy-700 rounded-lg p-5">
                     <p class="font-ui text-base font-semibold uppercase tracking-wide text-navy-400 mb-3">Plazos a considerar</p>
                     <div class="flex gap-3 items-start">
-            
-                        <p class="font-sans text-navy-300 text-sm leading-relaxed">
+
+                        <p class="font-sans text-navy-300 text-sm ">
                             Tené en cuenta que para realizar un reclamo es necesario que hayan pasado 15 días hábiles desde que realizaste el pedido sin que te hayan solicitado 15 días más para responderte. Tenés que hacerlo dentro de los 40 días hábiles de la fecha prevista para recibir la respuesta.
                         </p>
                     </div>
                 </div>
 
-                <p class="font-sans text-navy-300 text-sm leading-relaxed">
+                <p class="font-sans text-navy-300 text-sm ">
                     Para profundizar en la temática de la transparencia gubernamental y comprender su importancia, la Agencia de Acceso a la Información Pública, pone a disposición un sitio con información y recursos. Asimismo, permite consultar los resultados del Índice de Transparencia, una herramienta que evalúa el grado de cumplimiento de los compromisos asumidos por los organismos en esta materia.
                 </p>
-                
+
                 <div class="pt-4">
                     <a href="https://portal.transparencia.gob.ar/" target="_blank" rel="noopener noreferrer"
                         class="inline-flex items-center gap-2.5 bg-white text-navy-900 font-ui font-semibold text-sm px-6 py-3 rounded hover:bg-navy-100 transition-colors duration-150 group">

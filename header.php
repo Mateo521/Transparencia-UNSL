@@ -8,13 +8,16 @@
     <?php wp_head(); ?>
 
     <style type="text/tailwindcss">
-        @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
         @import "tailwindcss";
 
         @theme {
-            --font-sans: "Source+Sans+3", sans-serif;
-            --font-display: "Source+Sans+3", sans-serif;
-            --font-ui: "Source Sans 3", sans-serif;
+            --font-sans: "PT Sans", sans-serif;
+
+            --font-display:   "PT Sans", sans-serif;
+
+            --font-ui:     "PT Sans", sans-serif;
+
 
             --color-navy-950: #060d1f;
             --color-navy-900: #0d1b38;
@@ -90,8 +93,7 @@
 
                 <div class="flex-shrink-0 flex items-center">
                     <a href="<?php echo esc_url(home_url('/')); ?>" class="flex flex-col transition-colors duration-300">
-                        <span class="brand-sub font-ui text-[11px] font-bold tracking-[0.15em] uppercase transition-colors duration-300">Universidad Nacional de San Luis</span>
-                        <span class="brand-title font-display text-xl font-bold transition-colors duration-300">Portal de Transparencia</span>
+                        <img class="h-14 w-auto" src="<?php echo get_template_directory_uri() ?>/logo-unsl-negativo2.svg" alt="">
                     </a>
                 </div>
 

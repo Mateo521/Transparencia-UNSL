@@ -20,9 +20,9 @@ get_header();
 
                 <div class="absolute inset-0 bg-navy-950/80 mix-blend-multiply"></div>
 
-                
 
-                
+
+
             </div>
 
             <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
@@ -34,7 +34,7 @@ get_header();
                         </li>
 
                         <?php
-                        // Lógica para mostrar el padre si existe
+
                         $parent_id = wp_get_post_parent_id(get_the_ID());
                         if ($parent_id) : ?>
                             <li>
@@ -67,11 +67,10 @@ get_header();
             </div>
         </section>
 
-        <section class="bg-white py-12 sm:py-10 min-h-[50vh]">
+        <section class=" py-12 bg-stone-50 sm:py-10 min-h-[50vh]">
             <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
 
                 <style>
-                    /* Estilizamos los títulos H2 y H3 que vengan del editor */
                     .contenido-dinamico h2 {
                         font-family: 'Inter', sans-serif;
                         font-size: 1.5rem;
@@ -92,7 +91,7 @@ get_header();
                         margin-bottom: 1rem;
                     }
 
-                    /* Estilizamos las listas de enlaces (Los botones de presupuestos) */
+
                     .contenido-dinamico ul {
                         list-style: none;
                         padding: 0;
@@ -129,7 +128,7 @@ get_header();
                         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
                     }
 
-                    /* Icono de documento automático antes de cada enlace en la lista */
+
                     .contenido-dinamico ul li a::before {
                         content: '';
                         display: inline-block;
@@ -141,7 +140,7 @@ get_header();
                         background-size: cover;
                     }
 
-                    /* Citas o Notas (Bloque de texto de aclaración al final) */
+
                     .contenido-dinamico blockquote {
                         background-color: #f1f5f9;
                         /* slate-100 */
@@ -155,7 +154,7 @@ get_header();
                         font-style: normal;
                     }
 
-                    /* Enlaces normales en el texto */
+
                     .contenido-dinamico p a {
                         color: #2563eb;
                         text-decoration: underline;
@@ -168,11 +167,11 @@ get_header();
                     }
                 </style>
 
-                <div class="contenido-dinamico max-w-none font-sans text-stone-600 text-justify leading-relaxed space-y-4">
+                <div class="contenido-dinamico max-w-none font-sans text-stone-600 text-justify  space-y-4">
                     <?php the_content(); ?>
                 </div>
 
-                <div class="mt-12 py-6 px-3  flex items-center gap-3 text-stone-500 bg-stone-50  ">
+                <div class="mt-12 py-6 px-3  flex items-center gap-3 text-stone-500 bg-stone-100  ">
                     <svg class="w-5 h-5 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
