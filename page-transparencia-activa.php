@@ -53,12 +53,12 @@ get_header();
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
 
             <?php
-             $apartados = new WP_Query(array(
+            $apartados = new WP_Query(array(
                 'post_type'      => 'page',
                 'post_parent'    => get_the_ID(),
-                'posts_per_page' => -1, 
-                'orderby'        => 'title',
-                'order'          => 'ASC'  
+                'posts_per_page' => -1,
+                'orderby' => 'date', 
+                'order'   => 'ASC'
             ));
 
             if ($apartados->have_posts()) :
@@ -81,7 +81,7 @@ get_header();
                     </a>
                 <?php
                 endwhile;
-                wp_reset_postdata();  
+                wp_reset_postdata();
             else :
                 ?>
                 <p class="text-stone-500 col-span-full">Aún no se han cargado las categorías.</p>

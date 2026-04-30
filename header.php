@@ -13,11 +13,8 @@
 
         @theme {
             --font-sans: "PT Sans", sans-serif;
-
             --font-display:   "PT Sans", sans-serif;
-
             --font-ui:     "PT Sans", sans-serif;
-
 
             --color-navy-950: #060d1f;
             --color-navy-900: #0d1b38;
@@ -44,95 +41,166 @@
         .font-display { font-family: var(--font-display); }
         .font-ui { font-family: var(--font-ui); }
 
-       
         #site-header {
             transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
         }
-        
-       
-        #site-header.is-transparent {
-            background-color: transparent;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    
+        @media (min-width: 768px) {
+            #site-header.is-transparent {
+                background-color: transparent;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            #site-header.is-transparent #primary-menu > li > a { color: var(--color-navy-100); }
+            #site-header.is-transparent #primary-menu > li > a:hover { color: #ffffff; }
+            #site-header.is-transparent .logo-blanco { opacity: 1; }
+            #site-header.is-transparent .logo-color { opacity: 0; }
         }
-        #site-header.is-transparent .brand-sub { color: var(--color-navy-200); }
-        #site-header.is-transparent .brand-title { color: #ffffff; }
-        #site-header.is-transparent #primary-menu a { color: var(--color-navy-100); }
-        #site-header.is-transparent #primary-menu a:hover { color: #ffffff; }
-        #site-header.is-transparent .mobile-menu-btn { color: #ffffff; }
 
- 
-        #site-header.is-scrolled {
-            background-color: #ffffff;
-            border-bottom: 1px solid var(--color-stone-200);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        #site-header.is-scrolled,
+        @media (max-width: 767px) {
+            #site-header {
+                background-color: #ffffff;
+                border-bottom: 1px solid var(--color-stone-200);
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            }
+            #site-header #primary-menu > li > a { color: var(--color-stone-700); }
+            #site-header #primary-menu > li > a:hover { color: var(--color-navy-700); }
+            #site-header .mobile-menu-btn { color: var(--color-stone-500); }
+            #site-header .logo-blanco { opacity: 0; }
+            #site-header .logo-color { opacity: 1; }
         }
-        #site-header.is-scrolled .brand-sub { color: var(--color-stone-500); }
-        #site-header.is-scrolled .brand-title { color: #1e293b; }
-        #site-header.is-scrolled #primary-menu a { color: var(--color-stone-700); }
-        #site-header.is-scrolled #primary-menu a:hover { color: var(--color-navy-700); }
-        #site-header.is-scrolled .mobile-menu-btn { color: var(--color-stone-500); }
+
+        .logo-img { transition: opacity 0.4s ease; }
 
     
-        @keyframes fadein {
-            from { opacity: 0; transform: translateY(14px); }
-            to { opacity: 1; transform: translateY(0); }
+        @media (min-width: 768px) {
+            .group:hover > a > .dropdown-icon { transform: rotate(180deg); }
+            .group\/sub:hover > a > .dropdown-icon { transform: rotate(0deg); }  
         }
-        .card-item { animation: fadein 0.5s ease both; }
-        .card-item:nth-child(1) { animation-delay: 0.05s; }
-        .card-item:nth-child(2) { animation-delay: 0.12s; }
-        .card-item:nth-child(3) { animation-delay: 0.19s; }
-        .card-item:nth-child(4) { animation-delay: 0.26s; }
+    
+        .mobile-menu-item.is-open > a > .dropdown-icon { transform: rotate(180deg); }
+    
+        #mobile-menu-container {
+            transition: max-height 0.4s ease, opacity 0.4s ease;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        #mobile-menu-container.is-open {
+            max-height: 100vh; 
+            opacity: 1;
+            overflow-y: auto;
+        }
+        
+        
+        @media (max-width: 767px) {
+            .mobile-submenu {
+                position: static !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                box-shadow: none !important;
+                border: none !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                width: 100% !important;
+                display: none;  
+                background-color: var(--color-stone-50);
+            }
+            .mobile-menu-item.is-open > .mobile-submenu {
+                display: block;
+            }
+        }
+
     </style>
 </head>
 
 <body <?php body_class('bg-stone-50 text-stone-800 font-sans antialiased'); ?>>
 
     <header id="site-header" class="fixed w-full top-0 left-0 z-50 is-transparent">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 bg-white md:bg-transparent">
             <div class="flex justify-between items-center h-20">
 
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="<?php echo esc_url(home_url('/')); ?>" class="flex flex-col transition-colors duration-300">
-                        <img class="h-14 w-auto" src="<?php echo get_template_directory_uri() ?>/logo-unsl-negativo2.svg" alt="">
+
+                <div class="flex-shrink-0 flex items-center h-full">
+                    <a href="<?php echo esc_url(home_url('/')); ?>" class="relative flex items-center h-full">
+                        <img class="logo-img logo-blanco hidden md:block h-18 w-auto py-1"
+                            src="<?php echo get_template_directory_uri() ?>/logo-unsl-n.png"
+                            alt="UNSL Transparencia">
+                        <img class="logo-img logo-color absolute left-0 top-1/2 -translate-y-1/2 h-18 w-auto py-1"
+                            src="<?php echo get_template_directory_uri() ?>/logo-unsl-color.png"
+                            alt="UNSL Transparencia">
                     </a>
                 </div>
 
-                <nav class="hidden md:flex space-x-8">
-                    <?php
-                    wp_nav_menu(array(
-                        'theme_location' => 'primary',
-                        'container'      => false,
 
-                        'items_wrap'     => '<ul id="primary-menu" class="flex space-x-6 text-sm font-sans font-semibold transition-colors duration-300">%3$s</ul>',
-                        'fallback_cb'    => false,
-                    ));
+                <nav class="hidden md:flex space-x-8 items-center h-full">
+                    <?php
+                    if (has_nav_menu('primary')) {
+                        wp_nav_menu(array(
+                            'theme_location' => 'primary',
+                            'container'      => false,
+                            'items_wrap'     => '<ul id="primary-menu" class="flex space-x-6 items-center h-full transition-colors duration-300">%3$s</ul>',
+                            'fallback_cb'    => false,
+                            'walker'         => new Tailwind_Nav_Walker()
+                        ));
+                    }
                     ?>
                 </nav>
 
+
                 <div class="md:hidden flex items-center">
-                    <button type="button" class="mobile-menu-btn transition-colors duration-300 focus:outline-none" aria-label="Abrir menú">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <button id="mobile-menu-btn" type="button" class="mobile-menu-btn text-stone-600 transition-colors duration-300 focus:outline-none p-2" aria-label="Abrir menú">
+
+                        <svg id="icon-menu" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+
+                        <svg id="icon-close" class="h-7 w-7 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
                 </div>
 
             </div>
         </div>
+
+
+        <div id="mobile-menu-container" class="md:hidden bg-white border-t border-stone-100 shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <?php
+
+                if (has_nav_menu('primary')) {
+                    wp_nav_menu(array(
+                        'theme_location' => 'primary',
+                        'container'      => false,
+                        'items_wrap'     => '<ul id="mobile-primary-menu" class="flex flex-col w-full">%3$s</ul>',
+                        'fallback_cb'    => false,
+                        'walker'         => new Tailwind_Nav_Walker()
+                    ));
+                }
+                ?>
+            </div>
+        </div>
     </header>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const header = document.getElementById('site-header');
 
-
             const checkScroll = () => {
+                if (!header) return;
+
+
+
                 if (window.scrollY > 20) {
                     header.classList.remove('is-transparent');
                     header.classList.add('is-scrolled');
+                    header.style.backgroundColor = '#ffffff';
                 } else {
                     header.classList.add('is-transparent');
                     header.classList.remove('is-scrolled');
+                    header.style.backgroundColor = 'transparent';
                 }
             };
 
@@ -140,7 +208,43 @@
             checkScroll();
 
 
-            window.addEventListener('scroll', checkScroll);
+            window.addEventListener('scroll', () => {
+                window.requestAnimationFrame(checkScroll);
+            });
+
+
+            if (mobileMenuBtn && mobileMenuContainer) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenuContainer.classList.toggle('is-open');
+                    if (iconMenu && iconClose) {
+                        iconMenu.classList.toggle('hidden');
+                        iconClose.classList.toggle('hidden');
+                    }
+                    if (window.scrollY <= 20) {
+                        if (mobileMenuContainer.classList.contains('is-open')) {
+                            header.classList.remove('is-transparent');
+                            header.classList.add('is-scrolled');
+                        } else {
+                            header.classList.add('is-transparent');
+                            header.classList.remove('is-scrolled');
+                        }
+                    }
+                });
+            }
+
+
+            const mobileDropdownLinks = document.querySelectorAll('#mobile-primary-menu li.menu-item-has-children > a');
+            if (mobileDropdownLinks.length > 0) {
+                mobileDropdownLinks.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const parentLi = link.closest('.mobile-menu-item');
+                        if (parentLi) {
+                            parentLi.classList.toggle('is-open');
+                        }
+                    });
+                });
+            }
         });
     </script>
 
