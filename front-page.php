@@ -11,7 +11,7 @@ get_header();
 
     <h1 class="   max-w-7xl top-[40%] px-6 mx-auto text-4xl md:text-7xl  bg-gradient-to-r from-cyan-50 to-blue-300 bg-clip-text text-transparent  z-10 relative  font-bold mb-8">
         PORTAL <br> DE TRANSPARENCIA <br>
-        Universidad Nacional <br> de  San Luis
+        Universidad <br> Nacional <br> de  San Luis
     </h1>
 </section>
 <div class="max-w-7xl mx-auto relative text-black z-10 px-6 sm:px-10 lg:px-12">

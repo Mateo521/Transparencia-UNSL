@@ -4,17 +4,20 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php wp_title('|', true, 'right'); ?></title>
+
+
     <?php wp_head(); ?>
 
     <style type="text/tailwindcss">
-        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        :root {}
+
         @import "tailwindcss";
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');       
 
         @theme {
-            --font-sans: "PT Sans", sans-serif;
-            --font-display:   "PT Sans", sans-serif;
-            --font-ui:     "PT Sans", sans-serif;
+            --font-sans: "DM Sans", sans-serif;
+            --font-display:   "DM Sans", sans-serif;
+            --font-ui:     "DM Sans", sans-serif;    
 
             --color-navy-950: #060d1f;
             --color-navy-900: #0d1b38;
@@ -27,7 +30,6 @@
             --color-navy-200: #b3c9ed;
             --color-navy-100: #dce8f6;
             --color-navy-50: #f0f5fb;
-
             --color-stone-950: #0c0b09;
             --color-stone-900: #1c1a16;
             --color-stone-700: #44403a;
@@ -112,6 +114,10 @@
         }
 
     </style>
+
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/a11y-toolbar-master/css/a11y-toolbar.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/a11y-toolbar-master/css/a11y-custom.css">
+
 </head>
 
 <body <?php body_class('bg-stone-50 text-stone-800 font-sans antialiased'); ?>>
@@ -121,16 +127,41 @@
             <div class="flex justify-between items-center h-20">
 
 
+
                 <div class="flex-shrink-0 flex items-center h-full">
                     <a href="<?php echo esc_url(home_url('/')); ?>" class="relative flex items-center h-full">
-                        <img class="logo-img logo-blanco hidden md:block h-18 w-auto py-1"
+
+
+                        <img class="logo-img logo-blanco hidden md:block h-16 w-auto py-1 object-contain"
                             src="<?php echo get_template_directory_uri() ?>/logo-unsl-n.png"
                             alt="UNSL Transparencia">
-                        <img class="logo-img logo-color absolute left-0 top-1/2 -translate-y-1/2 h-18 w-auto py-1"
+
+
+                        <img class="logo-img logo-color static md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2 h-16 w-auto py-1 object-contain"
                             src="<?php echo get_template_directory_uri() ?>/logo-unsl-color.png"
                             alt="UNSL Transparencia">
+
                     </a>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                 <nav class="hidden md:flex space-x-8 items-center h-full">
@@ -187,12 +218,11 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const header = document.getElementById('site-header');
-
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenuContainer = document.getElementById('mobile-menu-container');
+            const iconMenu = document.getElementById('icon-menu');
+            const iconClose = document.getElementById('icon-close');
             const checkScroll = () => {
-                if (!header) return;
-
-
-
                 if (window.scrollY > 20) {
                     header.classList.remove('is-transparent');
                     header.classList.add('is-scrolled');
@@ -203,48 +233,37 @@
                     header.style.backgroundColor = 'transparent';
                 }
             };
-
-
             checkScroll();
-
-
-            window.addEventListener('scroll', () => {
-                window.requestAnimationFrame(checkScroll);
+            window.addEventListener('scroll', checkScroll);
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuContainer.classList.toggle('is-open');
+                iconMenu.classList.toggle('hidden');
+                iconClose.classList.toggle('hidden');
             });
 
 
-            if (mobileMenuBtn && mobileMenuContainer) {
-                mobileMenuBtn.addEventListener('click', () => {
-                    mobileMenuContainer.classList.toggle('is-open');
-                    if (iconMenu && iconClose) {
-                        iconMenu.classList.toggle('hidden');
-                        iconClose.classList.toggle('hidden');
-                    }
-                    if (window.scrollY <= 20) {
-                        if (mobileMenuContainer.classList.contains('is-open')) {
-                            header.classList.remove('is-transparent');
-                            header.classList.add('is-scrolled');
-                        } else {
-                            header.classList.add('is-transparent');
-                            header.classList.remove('is-scrolled');
-                        }
-                    }
-                });
-            }
 
 
-            const mobileDropdownLinks = document.querySelectorAll('#mobile-primary-menu li.menu-item-has-children > a');
-            if (mobileDropdownLinks.length > 0) {
-                mobileDropdownLinks.forEach(link => {
-                    link.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        const parentLi = link.closest('.mobile-menu-item');
-                        if (parentLi) {
-                            parentLi.classList.toggle('is-open');
+            const mobileToggles = document.querySelectorAll('#mobile-primary-menu .mobile-toggle-trigger');
+
+            if (mobileToggles.length > 0) {
+                mobileToggles.forEach(toggle => {
+                    toggle.addEventListener('click', (e) => {
+                        if (window.innerWidth < 768) {
+                            e.preventDefault();
+                            const parentLi = toggle.closest('.mobile-menu-item');
+                            if (parentLi) {
+                                parentLi.classList.toggle('is-open');
+                            }
                         }
                     });
                 });
             }
+
+
+
+
+
         });
     </script>
 

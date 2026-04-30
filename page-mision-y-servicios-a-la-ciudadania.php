@@ -90,9 +90,7 @@ get_header();
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                 <a href="https://carreras.unsl.edu.ar/carreras/" class="group bg-white border border-stone-200 rounded overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-300 flex flex-col">
-                    <div class="h-48 overflow-hidden bg-stone-200">
-                        <img src="URL_FOTO_PREGRADO.jpg" alt="Carreras de Pregrado" class="w-full h-full object-cover  transition-transform duration-500" />
-                    </div>
+
                     <div class="p-6 flex flex-col flex-1 justify-between">
                         <div>
                             <h3 class="font-display text-xl font-bold text-navy-900 group-hover:text-navy-600 transition-colors mb-2">Pregrado</h3>
@@ -108,9 +106,7 @@ get_header();
                 </a>
 
                 <a href="https://carreras.unsl.edu.ar/carreras/" class="group bg-white border border-stone-200 rounded overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-300 flex flex-col">
-                    <div class="h-48 overflow-hidden bg-stone-200">
-                        <img src="URL_FOTO_GRADO.jpg" alt="Carreras de Grado" class="w-full h-full object-cover  transition-transform duration-500" />
-                    </div>
+
                     <div class="p-6 flex flex-col flex-1 justify-between">
                         <div>
                             <h3 class="font-display text-xl font-bold text-navy-900 group-hover:text-navy-600 transition-colors mb-2">Grado</h3>
@@ -126,9 +122,7 @@ get_header();
                 </a>
 
                 <a href="https://posgrado.unsl.edu.ar/" class="group bg-white border border-stone-200 rounded overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-300 flex flex-col">
-                    <div class="h-48 overflow-hidden bg-stone-200">
-                        <img src="URL_FOTO_POSGRADO.jpg" alt="Carreras de Posgrado" class="w-full h-full object-cover  transition-transform duration-500" />
-                    </div>
+
                     <div class="p-6 flex flex-col flex-1 justify-between">
                         <div>
                             <h3 class="font-display text-xl font-bold text-navy-900 group-hover:text-navy-600 transition-colors mb-2">Posgrado</h3>
@@ -275,17 +269,106 @@ get_header();
         </div>
     </section>
 
+
     <section class="bg-white py-20 border-t border-stone-200">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 text-center">
-            <h2 class="font-display text-2xl font-bold text-navy-900 mb-8">Mapa del campus</h2>
-            <div class="bg-stone-100 rounded overflow-hidden border border-stone-200">
-                <img src="URL_IMAGEN_MAPA.jpg" alt="Mapa del Campus UNSL" class="w-full h-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-                <div style="display:none;" class="p-20 text-stone-400 font-sans">
-                    [ mapa ]
-                </div>
+            <h2 class="font-display text-2xl font-bold text-navy-900 mb-8">Nuestras sedes</h2>
+
+
+            <div class="bg-stone-100 rounded-xl overflow-hidden border border-stone-200 shadow-sm relative z-0">
+                <div id="unsl-map" class="w-full h-[250px] sm:h-[300px]"></div>
             </div>
         </div>
     </section>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const centerView = [-33.2, -65.8];
+            const zoomLevel = 7;
+
+
+            const map = L.map('unsl-map', {
+                scrollWheelZoom: false
+            }).setView(centerView, zoomLevel);
+
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+
+            const unslIcon = L.divIcon({
+                className: 'custom-leaflet-icon',
+                html: `<svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#1d3461"/>
+                   </svg>`,
+                iconSize: [36, 36],
+                iconAnchor: [18, 36],
+                popupAnchor: [0, -32]
+            });
+
+
+            const sedes = [{
+                    nombre: "Sede San Luis",
+                    direccion: "Ejército de los Andes 950",
+                    coords: [-33.292114736496266, -66.33961799597792]
+                },
+
+                {
+                    nombre: "Sede Villa Mercedes",
+                    direccion: "Ruta Provincial Nº 55 Extremo norte",
+                    coords: [-33.64140161822387, -65.44725681496806]
+                },
+                {
+                    nombre: "Sede Villa de Merlo",
+                    direccion: "Av. del Libertador S/N Barranca Colorada (5881) Villa de Merlo San Luis",
+                    coords: [-32.334364023704815, -65.00839379036395]
+                }
+            ];
+
+
+            sedes.forEach(sede => {
+                const marker = L.marker(sede.coords, {
+                    icon: unslIcon
+                }).addTo(map);
+
+
+                const popupContent = `
+                <div style="font-family: 'PT Sans', sans-serif;">
+                    <h3 style="margin: 0 0 4px 0; color: #0d1b38; font-weight: bold; font-size: 14px;">${sede.nombre}</h3>
+                    <p style="margin: 0; color: #79756c; font-size: 12px;">${sede.direccion}</p>
+                </div>
+            `;
+                marker.bindPopup(popupContent);
+            });
+
+
+            map.on('focus', function() {
+                map.scrollWheelZoom.enable();
+            });
+            map.on('blur', function() {
+                map.scrollWheelZoom.disable();
+            });
+        });
+    </script>
+
+    <style>
+        .leaflet-container {
+            z-index: 10 !important;
+            font-family: var(--font-sans), sans-serif;
+        }
+
+        .leaflet-popup-content-wrapper {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
 
 <?php endwhile; ?>
 <?php get_footer(); ?>

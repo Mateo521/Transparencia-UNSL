@@ -9,7 +9,7 @@ get_header();
 
 <?php while (have_posts()) : the_post(); ?>
 
-    <section class="bg-navy-900 py-12 sm:py-16">
+    <section class="bg-navy-900 py-16 sm:py-24">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
             <nav class="flex text-sm font-sans text-navy-300 mb-6" aria-label="Breadcrumb">
                 <ol class="inline-flex items-center space-x-2">
@@ -58,7 +58,7 @@ get_header();
 
                     <div class="bg-white border border-stone-200  p-6 sm:p-8 flex flex-col sm:flex-row items-center sm:items-start gap-6 shadow-sm hover:shadow-md transition-shadow">
                         <div class="w-36 h-36 bg-stone-100 rounded-full flex items-center justify-center border-4 border-white shadow-sm flex-shrink-0 overflow-hidden">
-                            <img class="size-full" src="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/brusasca.png" alt="">
+                            <img class="size-full" src="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/gil.png" alt="">
                         </div>
                         <div class="text-center sm:text-left flex-1">
                             <h3 class="font-display text-xl font-bold text-navy-900">Dr. Raúl Andrés Gil</h3>
@@ -74,7 +74,7 @@ get_header();
                     </div>
                     <div class="bg-white border border-stone-200  p-6 sm:p-8 flex flex-col sm:flex-row items-center sm:items-start gap-6 shadow-sm hover:shadow-md transition-shadow">
                         <div class="w-36 h-36 bg-stone-100 rounded-full flex items-center justify-center border-4 border-white shadow-sm flex-shrink-0 overflow-hidden">
-                            <img class="size-full" src="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/gil.png" alt="">
+                            <img class="size-full" src="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/brusasca.png" alt="Mgtr. María Claudia Brusasca">
                         </div>
                         <div class="text-center sm:text-left flex-1">
                             <h3 class="font-display text-xl font-bold text-navy-900">Mgtr. María Claudia Brusasca</h3>

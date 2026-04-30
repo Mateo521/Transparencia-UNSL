@@ -18,27 +18,19 @@ get_header();
                         <svg class="w-4 h-4 text-navy-500 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                         </svg>
-                        <span class="text-white ml-1 font-medium">Transparencia Activa</span>
+                        <span class="text-white ml-1 font-medium">Transparencia Proactiva</span>
                     </div>
                 </li>
             </ol>
         </nav>
 
         <h1 class="font-display text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
-            Transparencia Activa
+            Transparencia Proactiva
         </h1>
         <!--div class="w-14 h-[3px] bg-navy-400 mb-8 rounded-full"></div-->
 
         <div class="font-sans text-navy-200 text-base sm:text-lg max-w-7xl  space-y-5 text-justify">
-            <p>
-                La Transparencia Activa es la información pública de carácter obligatorio que la Universidad Nacional de San Luis pone a disposición de la ciudadanía de forma completa, actualizada y accesible, sin necesidad de solicitud previa, en cumplimiento con lo establecido por el <a href="https://www.argentina.gob.ar/normativa/nacional/ley-27275-265949" target="_blank" rel="noopener noreferrer" class="text-navy-300 underline underline-offset-2 decoration-navy-500 hover:text-white hover:decoration-navy-300 transition-colors">Artículo 32 de la Ley Nacional N° 27.275</a> de Acceso a la Información Pública.
-            </p>
-            <p>
-                En esta sección, la institución cumple con su deber legal de publicar, en formatos abiertos, datos sobre su gestión institucional, estructuras orgánicas y funcionales, presupuestos, nóminas, contrataciones y normativas vigentes, de manera clara, estructurada y entendible, procurando remover toda barrera que obstaculice o dificulte su reutilización por parte de terceros.
-            </p>
-            <p>
-                Su objetivo es garantizar el efectivo ejercicio del derecho de acceso a la información pública, promover la participación ciudadana y fortalecer la transparencia en la gestión, permitiendo a la ciudadanía conocer el funcionamiento de la Universidad de forma sistemática como base para el control y la rendición de cuentas institucional.
-            </p>
+            <p>La transparencia proactiva se entiende como una práctica institucional que va más allá de las obligaciones mínimas de publicación establecidas por la normativa. Implica la generación deliberada de información pública, construida en diálogo con actores relevantes de la sociedad, anticipando sus demandas y estructurando los datos en formatos accesibles y comprensibles. <br> En el proyecto Universidad Abierta, se expresa en la conformación de la Red Universidad Abierta, concebida como un espacio multisectorial de cocreación de la política de transparencia, donde participan organizaciones de reconocida trayectoria en acceso a la información y datos abiertos. Este enfoque reconoce que la legitimidad y eficacia de la apertura institucional depende, en gran medida, del diálogo sostenido con los usuarios de la información. Los acuerdos logrados en este espacio generan la disponibilidad de la información compartida en esta sección, que dada su naturaleza, se encuentra en permantente crecimiento.</p>
         </div>
     </div>
 </section>
@@ -53,7 +45,7 @@ get_header();
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
 
             <?php
-            // Consultamos todas las páginas que tengan como Padre a "Transparencia Proactiva"
+
             $apartados = new WP_Query(array(
                 'post_type'      => 'page',
                 'post_parent'    => get_the_ID(),

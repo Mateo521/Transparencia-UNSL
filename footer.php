@@ -7,7 +7,7 @@
 
             <div class="md:col-span-1">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="block mb-6">
-                    <span class="block font-ui text-[10px] font-bold tracking-[0.2em] text-navy-400 uppercase mb-1">Universidad Nacional de San Luis</span>
+                    <img class="w-auto h-20 pb-3" src="<?php echo get_template_directory_uri(); ?>/logo-unsl-n.png" alt="Logo Universidad Nacional de San Luis">
                     <span class="block font-display text-2xl font-bold text-white">Portal de Transparencia</span>
                 </a>
                 <p class="font-sans text-sm text-navy-300  mb-6">
@@ -54,7 +54,7 @@
 
         <div class="pt-8 border-t border-navy-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-sans text-navy-400">
             <div>
-                &copy; <?php echo date('Y'); ?> Universidad Nacional de San Luis. Todos los derechos reservados.
+                &copy; <?php echo date('Y'); ?> Universidad Nacional de San Luis
             </div>
             <div class="flex space-x-6">
                 <a href="https://www.argentina.gob.ar/normativa/nacional/ley-27275-265949" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Ley Nº 27.275</a>
