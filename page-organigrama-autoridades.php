@@ -9,7 +9,7 @@ get_header();
 
 <?php while (have_posts()) : the_post(); ?>
 
-    <section class="bg-navy-900 py-16 sm:py-24">
+    <section class="bg-navy-900 py-24">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
             <nav class="flex text-sm font-sans text-navy-300 mb-6" aria-label="Breadcrumb">
                 <ol class="inline-flex items-center space-x-2">

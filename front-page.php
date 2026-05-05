@@ -19,7 +19,7 @@ get_header();
     <div class="font-sans py-12 text-base sm:text-lg  space-y-5 max-w-7xl">
         <p>
             La Universidad Nacional de San Luis (UNSL) pone a disposición de la comunidad su Portal de Transparencia, en el marco de lo establecido por la
-            <a href="https://www.argentina.gob.ar/normativa/nacional/ley-27275-265949" target="_blank" rel="noopener noreferrer" class="text-navy-300 underline underline-offset-2 decoration-navy-500 hover:text-white hover:decoration-navy-300 transition-colors">
+            <a href="https://www.argentina.gob.ar/normativa/nacional/ley-27275-265949" target="_blank" rel="noopener noreferrer" class="text-navy-300 underline underline-offset-2 decoration-navy-500 hover:text-slate-900 hover:decoration-navy-300 transition-colors">
                 Ley Nº 27.275 de Acceso a la Información Pública
             </a>,
             cuyo objetivo es garantizar el derecho de acceso a la información pública, promover la participación ciudadana y fortalecer la transparencia en la gestión pública.
@@ -139,10 +139,6 @@ get_header();
                                 XXX@email.unsl.edu.ar
                             </a>
                         </dd>
-                    </div>
-                    <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-6">
-                        <dt class="font-ui text-base font-semibold uppercase tracking-wide text-stone-400">Teléfono</dt>
-                        <dd class="mt-1 sm:mt-0 sm:col-span-2 font-sans text-stone-400 italic text-sm">A completar</dd>
                     </div>
                 </dl>
             </div>
