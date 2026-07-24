@@ -67,7 +67,7 @@ get_header();
 
             <div>
                 <h2 class="wp-block-paragraph font-bold text-navy-900 mb-6">Procedimiento para solicitar Información Pública</h2>
-
+                                            
                 <div class="ml-4 space-y-6">
                     <div>
                         <h3 class="wp-block-paragraph font-semibold text-navy-900 mb-3">¿Quiénes pueden solicitar información?</h3>
