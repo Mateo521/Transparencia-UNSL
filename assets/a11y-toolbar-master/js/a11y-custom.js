@@ -242,18 +242,20 @@
         <button id="ci-a11y-close" aria-label="Cerrar panel" class="ml-2 p-1 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">✕</button>
       </div>
       <div id="ci-a11y-controls" class="text-sm space-y-2">
-      <div class="control-row">
-    <label><input id="ci-a11y-tts" type="checkbox" class="focus:ring-2 focus:ring-blue-500"> Texto a voz (clic para leer)</label>
-</div>
-<div class="control-row">
-    <label for="ci-a11y-filter">Modo de color (Daltonismo)</label>
-    <select id="ci-a11y-filter" class="ml-2 border rounded focus:ring-2 focus:ring-blue-500">
-        <option value="none">Normal</option>
-        <option value="protanopia">Protanopía (Rojo)</option>
-        <option value="deuteranopia">Deuteranopía (Verde)</option>
-        <option value="tritanopia">Tritanopía (Azul)</option>
-    </select>
-</div>
+        <div class="control-row">
+            <label><input id="ci-a11y-tts" type="checkbox" class="focus:ring-2 focus:ring-blue-500"> Texto a voz (clic para leer)</label>
+        </div>
+        
+        <div class="control-row">
+            <label for="ci-a11y-filter">Modo de color (Daltonismo)</label>
+            <select id="ci-a11y-filter" class="ml-2 border rounded focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-700 dark:text-white dark:border-slate-600">
+                <option class="text-black dark:bg-slate-700 dark:text-white" value="none">Normal</option>
+                <option class="text-black dark:bg-slate-700 dark:text-white" value="protanopia">Protanopía (Rojo)</option>
+                <option class="text-black dark:bg-slate-700 dark:text-white" value="deuteranopia">Deuteranopía (Verde)</option>
+                <option class="text-black dark:bg-slate-700 dark:text-white" value="tritanopia">Tritanopía (Azul)</option>
+            </select>
+        </div>
+        
         <div class="control-row"><label><input id="ci-a11y-dyslexic" type="checkbox" class="focus:ring-2 focus:ring-blue-500"> Tipografía para dislexia</label></div>
 
         <div class="control-row">
@@ -281,33 +283,33 @@
 
         <div class="control-row">
           <label for="ci-a11y-align">Alinear</label>
-          <select id="ci-a11y-align" class="ml-2 focus:ring-2 focus:ring-blue-500">
-            <option value="left">Izquierda</option>
-            <option value="center">Centrado</option>
-            <option value="justify">Justificar</option>
-            <option value="right">Derecha</option>
+          <select id="ci-a11y-align" class="ml-2 border rounded focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-700 dark:text-white dark:border-slate-600">
+            <option class="text-black dark:bg-slate-700 dark:text-white" value="left">Izquierda</option>
+            <option class="text-black dark:bg-slate-700 dark:text-white" value="center">Centrado</option>
+            <option class="text-black dark:bg-slate-700 dark:text-white" value="justify">Justificar</option>
+            <option class="text-black dark:bg-slate-700 dark:text-white" value="right">Derecha</option>
           </select>
         </div>
-
+        
         <div class="control-row">
           <label for="ci-a11y-contrast">Contraste</label>
           <input id="ci-a11y-contrast" type="range" min="0.5" max="2" step="0.01" class="focus:ring-2 focus:ring-blue-500">
         </div>
-
+        
         <div class="control-row"><label><input id="ci-a11y-hide-media" type="checkbox" class="focus:ring-2 focus:ring-blue-500"> Ocultar imágenes / videos</label></div>
-
+        
         <div class="control-row">
           <label for="ci-a11y-cursor">Cursor</label>
-          <select id="ci-a11y-cursor" class="ml-2 focus:ring-2 focus:ring-blue-500">
-            <option value="default">Normal</option>
-            <option value="large">Grande</option>
-            <option value="dot">Punto</option>
+          <select id="ci-a11y-cursor" class="ml-2 border rounded focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-700 dark:text-white dark:border-slate-600">
+            <option class="text-black dark:bg-slate-700 dark:text-white" value="default">Normal</option>
+            <option class="text-black dark:bg-slate-700 dark:text-white" value="large">Grande</option>
+            <option class="text-black dark:bg-slate-700 dark:text-white" value="dot">Punto</option>
           </select>
         </div>
-
+        
         <div class="flex gap-2 mt-3">
           <button id="ci-a11y-reset" class="flex-1 bg-red-600 text-white p-2 rounded focus:ring-2 focus:ring-blue-500 focus:outline-none">Reestablecer</button>
-          <button id="ci-a11y-save" class="flex-1 bg-slate-200   p-2 rounded focus:ring-2 focus:ring-blue-500 focus:outline-none">Guardar</button>
+          <button id="ci-a11y-save" class="flex-1 bg-slate-200 dark:bg-slate-600 dark:text-white p-2 rounded focus:ring-2 focus:ring-blue-500 focus:outline-none">Guardar</button>
         </div>
       </div>
     `;
@@ -335,7 +337,7 @@
       if (n) { host = n; break; }
     }
 
-  
+
     const btn = document.createElement('button');
     btn.id = 'ci-a11y-toggle';
     btn.className = 'fixed bottom-4 flex justify-center items-center left-4 z-[9998] bg-blue-600 text-white rounded-full p-3 shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-300';

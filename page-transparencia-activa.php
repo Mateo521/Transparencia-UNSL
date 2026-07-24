@@ -57,8 +57,8 @@ get_header();
                 'post_type'      => 'page',
                 'post_parent'    => get_the_ID(),
                 'posts_per_page' => -1,
-                'orderby' => 'date', 
-                'order'   => 'ASC'
+                'orderby'        => 'menu_order',  
+                'order'          => 'ASC'
             ));
 
             if ($apartados->have_posts()) :

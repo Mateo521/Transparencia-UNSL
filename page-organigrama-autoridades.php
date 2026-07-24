@@ -262,7 +262,7 @@ get_header();
                     <h2 class="font-display text-xl font-bold text-navy-900 mb-6 border-b border-stone-200 pb-3">Estructura y normativa</h2>
                     <div class="space-y-4">
 
-                        <a href="http://www.secgral.unsl.edu.ar/wp-content/uploads/docs/OCS%2027-25%20ESTRUCTURA%20DE%20GESTION.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
+                        <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/OCS27-25-Estructurta-de-Gestion.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
 
                             <div class="flex-1">
                                 <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">Estructura de Gestión OCS 27-25</h3>
@@ -273,7 +273,7 @@ get_header();
                             </svg>
                         </a>
 
-                        <a href="http://www.secgral.unsl.edu.ar/wp-content/uploads/docs/OR%2017-22%20ESTRUCTURA%20ADMINISTRATIVA.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
+                        <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/OR17-22-Estructura-Administrativa.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
 
                             <div class="flex-1">
                                 <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">Estructura Administrativa OR 17-22</h3>

@@ -5,13 +5,14 @@
  */
 get_header();
 ?>
+
 <section class="bg-navy-900 py-20 relative h-screen sm:py-28">
     <img class="absolute size-full left-0 object-cover  object-center top-0 z-0" src="http://192.168.103.3/wp-content/themes/Carreras-UNSL/imagenes/carreras.jpg" alt="">
     <div class="bg-gradient-to-r from-[#11153B] to-[#003D54]/50 absolute z-1 size-full left-0 top-0"></div>
 
     <h1 class="   max-w-7xl top-[40%] px-6 mx-auto text-4xl md:text-7xl  bg-gradient-to-r from-cyan-50 to-blue-300 bg-clip-text text-transparent  z-10 relative  font-bold mb-8">
         PORTAL <br> DE TRANSPARENCIA <br>
-        Universidad <br> Nacional <br> de  San Luis
+        Universidad <br> Nacional <br> de San Luis
     </h1>
 </section>
 <div class="max-w-7xl mx-auto relative text-black z-10 px-6 sm:px-10 lg:px-12">
@@ -51,8 +52,9 @@ get_header();
                     </div>
                 </div>
             </a>
-            <a href="<?php echo home_url('/transparencia-proactiva'); ?>" class="card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
-                <!--div class="h-1 w-full bg-navy-700 group-hover:bg-navy-500 transition-colors duration-200"></div-->
+
+
+            <a href="<?php echo home_url('/transparencia-proactiva'); ?>" class="js-modal-wip card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
                 <div class="flex flex-col flex-1">
                     <div class="mb-2 text-stone-300 text-sm font-semibold tracking-wider">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/fachada-2.jpg" alt="Fachada de la Universidad Nacional de San Luis" class="w-full h-48 object-cover rounded">
@@ -61,28 +63,33 @@ get_header();
                         <h3 class="font-ui text-base font-semibold text-navy-900 group-hover:text-navy-600 transition-colors mb-3 leading-snug">
                             Transparencia Proactiva
                         </h3>
-                        <p class="font-sans text-sm text-stone-500  flex-1">
+                        <p class="font-sans text-sm text-stone-500 flex-1">
                             Información relevante relacionada a la gestión institucional no comprendida en el Artículo 32 de la Ley 27.275
                         </p>
                     </div>
                 </div>
             </a>
-            <a href="<?php echo home_url('/portal-de-datos-abiertos'); ?>" class="card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
-                <!--div class="h-1 w-full bg-navy-700 group-hover:bg-navy-500 transition-colors duration-200"></div-->
+
+
+
+
+            <a href="https://datosabiertos.unsl.edu.ar" target="_blank" rel="noopener noreferrer" class="js-modal-wip card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
                 <div class="flex flex-col flex-1">
                     <div class="mb-2 text-stone-300 text-sm font-semibold tracking-wider">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/datos-abiertos.jpg" alt="Fachada de la Universidad Nacional de San Luis" class="w-full h-48 object-cover rounded">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/datos-abiertos.jpg" alt="Portal de Datos Abiertos" class="w-full h-48 object-cover rounded">
                     </div>
                     <div class="px-5 py-3">
                         <h3 class="font-ui text-base font-semibold text-navy-900 group-hover:text-navy-600 transition-colors mb-3 leading-snug">
                             Portal de Datos Abiertos
                         </h3>
-                        <p class="font-sans  text-sm text-stone-500  flex-1">
+                        <p class="font-sans text-sm text-stone-500 flex-1">
                             Conjuntos de datos publicados en formato abierto y reutilizables para ser usados por la comunidad para diferentes objetivos.
                         </p>
                     </div>
                 </div>
             </a>
+
+
             <a href="<?php echo home_url('/solicitud-de-informacion'); ?>" class="card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
                 <!--div class="h-1 w-full bg-navy-700 group-hover:bg-navy-500 transition-colors duration-200"></div-->
                 <div class=" flex flex-col flex-1">
@@ -122,14 +129,14 @@ get_header();
                         <dt class="font-ui text-base font-semibold uppercase tracking-wide text-stone-400">Nombre y apellido</dt>
                         <dd class="mt-1 sm:mt-0 sm:col-span-2">
                             <p class="font-sans text-navy-900 font-medium">Eduardo Enrique Muruzeta Vilar</p>
-                            <p class="font-sans text-stone-400 text-base mt-0.5">(Designación por Resolución Rectoral Nº XXXX/2026 – XX/XX/2026)</p>
+                            <p class="font-sans text-stone-400 text-base mt-0.5">(Designación por <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/07/RR933-2026.pdf" target="_blank" rel="noopener noreferrer" class="text-stone-400 underline hover:text-stone-600">Resolución Rectoral N.º 933/2026</a> – 21/07/2026)</p>
                         </dd>
                     </div>
                     <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-6">
                         <dt class="font-ui text-base font-semibold uppercase tracking-wide text-stone-400">Nombre y apellido</dt>
                         <dd class="mt-1 sm:mt-0 sm:col-span-2">
                             <p class="font-sans text-navy-900 font-medium">Antonella Di Gennaro</p>
-                            <p class="font-sans text-stone-400 text-base mt-0.5">(Designación por Resolución Rectoral Nº XXXX/2026 – XX/XX/2026)</p>
+                            <p class="font-sans text-stone-400 text-base mt-0.5">(Designación por <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/07/RR933-2026.pdf" target="_blank" rel="noopener noreferrer" class="text-stone-400 underline hover:text-stone-600">Resolución Rectoral N.º 933/2026</a> – 21/07/2026)</p>
                         </dd>
                     </div>
                     <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-6">
@@ -187,6 +194,17 @@ get_header();
                 </div>
             </div>
         </div>
+
+        <div class="mt-16 py-4 px-3  flex items-center gap-3 text-stone-500 bg-stone-100 ">
+            <svg class="w-5 h-5 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <p class="font-ui text-sm">
+                Información actualizada a <strong><?php echo get_the_modified_date('F \d\e Y'); ?></strong>.
+            </p>
+        </div>
+
+
     </div>
 </section>
 

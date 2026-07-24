@@ -66,14 +66,14 @@ get_header();
                     <p class="font-ui text-xs font-bold text-navy-800 uppercase tracking-widest mb-4">Estatuto de la UNSL (Art. 1°)</p>
                     <p class="text-stone-700 italic">
                         "a) Formar recursos humanos capacitados para la aplicación del conocimiento en el mejoramiento de las condiciones de vida de la sociedad y consustanciados con la obligación que se adquiere, junto con el saber, para con el Pueblo de su Nación.<br><br>
-                        b) Desarrollar el conocimiento científico y técnico con vistas a aumentar la comprensión del Universo y la ubicación del Hombre en el mismo.<br><br>
+                        b) Desarrollar el conocimiento científico y técnico con vistas a aumentar la comprensión del Universo y la ubicación del la persona en el mismo.<br><br>
                         c) Difundir el conocimiento y todo tipo de cultura y participar activamente en la comunidad propendiendo a la formación de una opinión pública esclarecida y comprometida con el sistema de vida republicano y democrático."
                     </p>
                 </div>
 
                 <div class="pt-2">
                     <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/Estatuto-Universidad-Nacional-de-San-Luis-2018.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 font-ui text-sm font-semibold text-navy-700 hover:text-navy-900 transition-colors uppercase tracking-wide">
-                        Consultar Estatuto Completo
+                        Consultar Estatuto completo
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
@@ -85,11 +85,11 @@ get_header();
 
     <section class="bg-stone-50 py-20 border-t border-stone-200">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
-            <h2 class="font-display text-3xl font-bold text-navy-900 mb-10 text-center">Oferta Académica</h2>
+            <h2 class="font-display text-3xl font-bold text-navy-900 mb-10 text-center">Oferta académica</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-                <a href="https://carreras.unsl.edu.ar/carreras/" class="group bg-white border border-stone-200 rounded overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-300 flex flex-col">
+                <a target="_blank" href="https://carreras.unsl.edu.ar/carreras/?tipo=pregrado" class="group bg-white border border-stone-200 rounded overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-300 flex flex-col">
 
                     <div class="p-6 flex flex-col flex-1 justify-between">
                         <div>
@@ -105,7 +105,7 @@ get_header();
                     </div>
                 </a>
 
-                <a href="https://carreras.unsl.edu.ar/carreras/" class="group bg-white border border-stone-200 rounded overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-300 flex flex-col">
+                <a target="_blank" href="https://carreras.unsl.edu.ar/carreras/?tipo=grado/" class="group bg-white border border-stone-200 rounded overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-300 flex flex-col">
 
                     <div class="p-6 flex flex-col flex-1 justify-between">
                         <div>
@@ -121,7 +121,7 @@ get_header();
                     </div>
                 </a>
 
-                <a href="https://posgrado.unsl.edu.ar/" class="group bg-white border border-stone-200 rounded overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-300 flex flex-col">
+                <a target="_blank" href="https://posgrado.unsl.edu.ar/" class="group bg-white border border-stone-200 rounded overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-300 flex flex-col">
 
                     <div class="p-6 flex flex-col flex-1 justify-between">
                         <div>
@@ -278,6 +278,17 @@ get_header();
             <div class="bg-stone-100 rounded-xl overflow-hidden border border-stone-200 shadow-sm relative z-0">
                 <div id="unsl-map" class="w-full h-[250px] sm:h-[300px]"></div>
             </div>
+
+
+            <div class="mt-12 py-6 px-3  flex items-center gap-3 text-stone-500 bg-stone-100  ">
+                <svg class="w-5 h-5 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <p class="font-ui text-sm">
+                    Información actualizada en <strong><?php echo get_the_modified_date('F \d\e Y'); ?></strong>.
+                </p>
+            </div>
+
         </div>
     </section>
 
@@ -371,4 +382,8 @@ get_header();
     </style>
 
 <?php endwhile; ?>
+
+
+
+
 <?php get_footer(); ?>

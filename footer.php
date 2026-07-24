@@ -1,5 +1,8 @@
 </main>
 <section class="spikes"></section>
+
+
+
 <footer class="bg-navy-950 border-t border-navy-900 pt-16 pb-8 mt-auto">
     <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
 
@@ -20,7 +23,7 @@
                 <ul class="space-y-3 font-sans text-sm text-navy-300">
                     <li><a href="<?php echo esc_url(home_url('/transparencia-activa')); ?>" class="hover:text-white transition-colors">Transparencia Activa</a></li>
                     <li><a href="<?php echo esc_url(home_url('/transparencia-proactiva')); ?>" class="hover:text-white transition-colors">Transparencia Proactiva</a></li>
-                    <li><a href="<?php echo esc_url(home_url('/portal-de-datos-abiertos')); ?>" class="hover:text-white transition-colors">Portal de Datos Abiertos</a></li>
+                    <li><a href=" https://datosabiertos.unsl.edu.ar" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Portal de Datos Abiertos</a></li>
                     <li><a href="<?php echo esc_url(home_url('/solicitud-de-informacion')); ?>" class="hover:text-white transition-colors">Solicitud de Información</a></li>
                 </ul>
             </div>
