@@ -194,7 +194,6 @@ get_header();
                 </div>
             </div>
         </div>
-
         <div class="mt-16 py-4 px-3  flex items-center gap-3 text-stone-500 bg-stone-100 ">
             <svg class="w-5 h-5 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -203,8 +202,6 @@ get_header();
                 Información actualizada a <strong><?php echo get_the_modified_date('F \d\e Y'); ?></strong>.
             </p>
         </div>
-
-
     </div>
 </section>
 
