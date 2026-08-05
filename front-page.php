@@ -73,7 +73,7 @@ get_header();
 
 
 
-            <a href="https://datosabiertos.unsl.edu.ar" target="_blank" rel="noopener noreferrer" class="js-modal-wip card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
+            <a href="https://datosabiertos.unsl.edu.ar/organization/universidad-nacional-de-san-luis" target="_blank" rel="noopener noreferrer" class="js-modal-wip card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
                 <div class="flex flex-col flex-1">
                     <div class="mb-2 text-stone-300 text-sm font-semibold tracking-wider">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/datos-abiertos.jpg" alt="Portal de Datos Abiertos" class="w-full h-48 object-cover rounded">
@@ -142,8 +142,8 @@ get_header();
                     <div class="py-4 sm:grid sm:grid-cols-3 sm:gap-6">
                         <dt class="font-ui text-base font-semibold uppercase tracking-wide text-stone-400">Correo electrónico</dt>
                         <dd class="mt-1 sm:mt-0 sm:col-span-2">
-                            <a href="mailto:XXX@email.unsl.edu.ar" class="font-sans text-navy-600 underline underline-offset-2 decoration-navy-300 hover:text-navy-900 hover:decoration-navy-600 transition-colors">
-                                XXX@email.unsl.edu.ar
+                            <a href="mailto:transparencia@email.unsl.edu.ar" class="font-sans text-navy-600 underline underline-offset-2 decoration-navy-300 hover:text-navy-900 hover:decoration-navy-600 transition-colors">
+                                transparencia@email.unsl.edu.ar
                             </a>
                         </dd>
                     </div>

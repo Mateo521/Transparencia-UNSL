@@ -23,7 +23,7 @@
                 <ul class="space-y-3 font-sans text-sm text-navy-300">
                     <li><a href="<?php echo esc_url(home_url('/transparencia-activa')); ?>" class="hover:text-white transition-colors">Transparencia Activa</a></li>
                     <li><a href="<?php echo esc_url(home_url('/transparencia-proactiva')); ?>" class="hover:text-white transition-colors">Transparencia Proactiva</a></li>
-                    <li><a href=" https://datosabiertos.unsl.edu.ar" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Portal de Datos Abiertos</a></li>
+                    <li><a href=" https://datosabiertos.unsl.edu.ar/organization/universidad-nacional-de-san-luis" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Portal de Datos Abiertos</a></li>
                     <li><a href="<?php echo esc_url(home_url('/solicitud-de-informacion')); ?>" class="hover:text-white transition-colors">Solicitud de Información</a></li>
                 </ul>
             </div>

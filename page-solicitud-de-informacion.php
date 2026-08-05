@@ -54,14 +54,14 @@ get_header();
 
             <div>
                 <h2 class="wp-block-paragraph font-bold text-navy-900 mb-4">¿Cómo se realiza una solicitud?</h2>
-                <p class="wp-block-paragraph">La solicitud se puede realizar a través del correo electrónico XXXX@unsl.edu.ar. En el mismo, se debe precisar en la solicitud: Nombres y Apellidos, DNI o Pasaporte, Domicilio, Teléfono y Correo Electrónico.</p>
+                <p class="wp-block-paragraph">La solicitud se puede realizar a través del correo electrónico <a href="mailto:transparencia@email.unsl.edu.ar" class="text-navy-600 hover:text-navy-800 underline transition-colors">transparencia@email.unsl.edu.ar</a>. En el mismo, se debe precisar en la solicitud: Nombres y Apellidos, DNI o Pasaporte, Domicilio, Teléfono y Correo Electrónico.</p>
             </div>
 
             <div>
                 <h2 class="wp-block-paragraph font-bold text-navy-900 mb-4">Responsables de la Política de Transparencia en la UNSL</h2>
                 <ul class="space-y-3 ml-4">
-                    <li><strong>Nombre y apellido:</strong> Eduardo Enrique Muruzeta Vilar (Designación por Resolución Rectoral Nº XXXX/2026 - XX/XX/2026)</li>
-                    <li><strong>Nombre y apellido:</strong> Antonella Di Gennaro (Designación por Resolución Rectoral Nº XXXX/2026 - XX/XX/2026)</li>
+                    <li> <strong>Nombre y apellido:</strong> Eduardo Enrique Muruzeta Vilar (<a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/07/RR933-2026.pdf" target="_blank" class="text-navy-600 hover:text-navy-800 underline transition-colors">Designación por Resolución Rectoral N.º 933/2026 – 21/07/2026</a>)</li>
+                    <li><strong>Nombre y apellido:</strong> Antonella Di Gennaro (<a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/07/RR933-2026.pdf" target="_blank" class="text-navy-600 hover:text-navy-800 underline transition-colors">Designación por Resolución Rectoral N.º 933/2026 – 21/07/2026</a>)</li>
                 </ul>
             </div>
 
