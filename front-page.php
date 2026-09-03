@@ -5,19 +5,17 @@
  */
 get_header();
 ?>
-
 <section class="bg-navy-900 py-20 relative h-screen sm:py-28">
     <img class="absolute size-full left-0 object-cover  object-center top-0 z-0" src="http://192.168.103.3/wp-content/themes/Carreras-UNSL/imagenes/carreras.jpg" alt="">
     <div class="bg-gradient-to-r from-[#11153B] to-[#003D54]/50 absolute z-1 size-full left-0 top-0"></div>
 
     <h1 class="   max-w-7xl top-[40%] px-6 mx-auto text-4xl md:text-7xl  bg-gradient-to-r from-cyan-50 to-blue-300 bg-clip-text text-transparent  z-10 relative  font-bold mb-8">
-        PORTAL <br> DE TRANSPARENCIA <br>
-        Universidad <br> Nacional <br> de San Luis
+        PORTAL <br> DE TRANSPARENCIA
     </h1>
 </section>
 <div class="max-w-7xl mx-auto relative text-black z-10 px-6 sm:px-10 lg:px-12">
     <!--div class="w-14 h-[3px] bg-navy-400 mb-8 rounded-full"></div-->
-    <div class="font-sans py-12 text-base sm:text-lg  space-y-5 max-w-7xl">
+    <div class="font-sans py-12 text-base sm:text-lg text-justify space-y-5 max-w-7xl">
         <p>
             La Universidad Nacional de San Luis (UNSL) pone a disposición de la comunidad su Portal de Transparencia, en el marco de lo establecido por la
             <a href="https://www.argentina.gob.ar/normativa/nacional/ley-27275-265949" target="_blank" rel="noopener noreferrer" class="text-navy-300 underline underline-offset-2 decoration-navy-500 hover:text-slate-900 hover:decoration-navy-300 transition-colors">
@@ -52,8 +50,6 @@ get_header();
                     </div>
                 </div>
             </a>
-
-
             <a href="<?php echo home_url('/transparencia-proactiva'); ?>" class="js-modal-wip card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
                 <div class="flex flex-col flex-1">
                     <div class="mb-2 text-stone-300 text-sm font-semibold tracking-wider">
@@ -69,10 +65,6 @@ get_header();
                     </div>
                 </div>
             </a>
-
-
-
-
             <a href="https://datosabiertos.unsl.edu.ar/organization/universidad-nacional-de-san-luis" target="_blank" rel="noopener noreferrer" class="js-modal-wip card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
                 <div class="flex flex-col flex-1">
                     <div class="mb-2 text-stone-300 text-sm font-semibold tracking-wider">
@@ -88,8 +80,6 @@ get_header();
                     </div>
                 </div>
             </a>
-
-
             <a href="<?php echo home_url('/solicitud-de-informacion'); ?>" class="card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
                 <!--div class="h-1 w-full bg-navy-700 group-hover:bg-navy-500 transition-colors duration-200"></div-->
                 <div class=" flex flex-col flex-1">
@@ -116,12 +106,12 @@ get_header();
                 <p class="font-ui text-stone-500 text-base font-semibold uppercase  mb-4">
                     Contacto institucional
                 </p>
-                <h2 class="font-display text-3xl sm:text-4xl font-bold text-navy-900 leading-tight">
-                    Responsables de la Política de Transparencia en la UNSL
+                <h2 class="font-display text-[1.65rem]  font-bold text-navy-900 leading-tight">
+                    Responsables de acceso a la Información Pública en la UNSL
                 </h2>
-                <p class="font-sans text-stone-500 text-sm mt-4 ">
+                <!--p class="font-sans text-stone-500 text-sm mt-4 ">
                     En caso de alguna duda respecto de la información aquí publicada podés contactarte:
-                </p>
+                </p-->
             </div>
             <div class="lg:col-span-2">
                 <dl class="divide-y divide-stone-100">
@@ -165,7 +155,7 @@ get_header();
             </div>
             <div class="lg:col-span-2 space-y-6">
                 <div class=" pl-6">
-                    <p class="font-sans text-navy-200 text-base ">
+                    <p class="font-sans text-navy-200 text-base text-justify">
                         La Agencia de Acceso a la Información Pública (AAIP) es el órgano garante de las Políticas de Transparencia de los organismos. Para realizar un reclamo por falta de respuesta podés
                         <a href="https://www.argentina.gob.ar/servicio/reclamar-por-incumplimiento-de-una-solicitud-de-acceso-la-informacion-publica" target="_blank" rel="noopener noreferrer" class="text-navy-300 underline underline-offset-2 decoration-navy-600 hover:text-white hover:decoration-navy-400 transition-colors">
                             ingresar aquí
@@ -175,12 +165,12 @@ get_header();
                 <div class="bg-navy-900 border border-navy-700 rounded-lg p-5">
                     <p class="font-ui text-base font-semibold uppercase tracking-wide text-navy-400 mb-3">Plazos a considerar</p>
                     <div class="flex gap-3 items-start">
-                        <p class="font-sans text-navy-200 text-sm ">
+                        <p class="font-sans text-navy-200 text-sm text-justify">
                             Tené en cuenta que para realizar un reclamo es necesario que hayan pasado 15 días hábiles desde que realizaste el pedido sin que te hayan solicitado 15 días más para responderte. Tenés que hacerlo dentro de los 40 días hábiles de la fecha prevista para recibir la respuesta.
                         </p>
                     </div>
                 </div>
-                <p class="font-sans text-navy-200 text-sm ">
+                <p class="font-sans text-justify text-navy-200 text-sm ">
                     Para profundizar en la temática de la transparencia gubernamental y comprender su importancia, la Agencia de Acceso a la Información Pública, pone a disposición un sitio con información y recursos. Asimismo, permite consultar los resultados del Índice de Transparencia, una herramienta que evalúa el grado de cumplimiento de los compromisos asumidos por los organismos en esta materia.
                 </p>
                 <div class="pt-4">
@@ -204,5 +194,4 @@ get_header();
         </div>
     </div>
 </section>
-
 <?php get_footer(); ?>

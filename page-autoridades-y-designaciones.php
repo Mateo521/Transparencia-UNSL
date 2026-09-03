@@ -92,7 +92,7 @@ get_header();
             </div>
 
 
-            <div class="mb-20">
+            <!--div class="mb-20">
                 <h2 class="font-display text-2xl font-bold text-navy-900 mb-8 border-b border-stone-200 pb-4">Organigrama</h2>
 
                 <div class="bg-white border border-stone-200 rounded-xl p-8 shadow-sm overflow-x-auto">
@@ -201,7 +201,7 @@ get_header();
 
                     </div>
                 </div>
-            </div>
+            </div-->
 
 
             <div class="mb-16">
@@ -256,7 +256,7 @@ get_header();
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!--div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
                 <div>
                     <h2 class="font-display text-xl font-bold text-navy-900 mb-6 border-b border-stone-200 pb-3">Estructura y normativa</h2>
@@ -316,7 +316,7 @@ get_header();
                     </div>
                 </div>
 
-            </div>
+            </div-->
 
             <div class="mt-16 py-4 px-3  flex items-center gap-3 text-stone-500 bg-stone-100 ">
                 <svg class="w-5 h-5 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">

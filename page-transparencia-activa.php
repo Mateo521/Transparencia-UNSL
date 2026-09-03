@@ -46,9 +46,6 @@ get_header();
 <section class="bg-stone-50 py-16 sm:py-24">
     <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
 
-        <p class="font-ui text-stone-500 text-base font-semibold uppercase  mb-8">
-            Categorías de información
-        </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
 
