@@ -35,14 +35,14 @@ get_header();
                             <svg class="w-4 h-4 text-navy-500 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                             </svg>
-                            <span class="text-white ml-1 font-medium" aria-current="page">Organigrama, autoridades y personal</span>
+                            <span class="text-white ml-1 font-medium" aria-current="page">Autoridades y Designaciones</span>
                         </div>
                     </li>
                 </ol>
             </nav>
 
             <h1 class="font-display text-3xl sm:text-4xl font-bold text-white leading-tight">
-                Organigrama, autoridades y personal
+                Autoridades y Designaciones
             </h1>
         </div>
     </section>

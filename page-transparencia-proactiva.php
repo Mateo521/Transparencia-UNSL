@@ -38,9 +38,7 @@ get_header();
 <section class="bg-stone-50 py-16 sm:py-24">
     <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
 
-        <p class="font-ui text-stone-500 text-xs font-semibold uppercase tracking-[0.16em] mb-8">
-            Ejes de Gestión Proactiva
-        </p>
+       
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
 
@@ -59,21 +57,17 @@ get_header();
             ?>
                     <a href="<?php the_permalink(); ?>" class="group bg-white border border-stone-200 rounded-lg p-5 flex flex-col justify-between hover:border-navy-400 hover:shadow-md transition-all duration-200 h-full">
 
-                        <div class="flex items-start justify-between mb-4">
-                            <div class="bg-stone-100 p-2.5 rounded-md text-navy-700 group-hover:bg-navy-50 group-hover:text-navy-600 transition-colors">
-                                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                                </svg>
-                            </div>
+                        <div class="flex items-start justify-between my-1">
+                            <h2 class="font-ui font-semibold text-navy-900 group-hover:text-navy-700 transition-colors text-[15px] leading-snug">
+                                <?php the_title(); ?>
+                            </h2>
 
                             <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-500 group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                             </svg>
                         </div>
 
-                        <h2 class="font-ui font-semibold text-navy-900 group-hover:text-navy-700 transition-colors text-[15px] leading-snug">
-                            <?php the_title(); ?>
-                        </h2>
+
 
                     </a>
                 <?php

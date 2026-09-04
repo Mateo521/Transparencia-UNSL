@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Detalle de Categoría (Transparencia)
+ * Template Name: Detalle de Categoría (Transparencia Activa)
  * Template Post Type: page
  */
 get_header();
