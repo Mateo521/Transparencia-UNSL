@@ -5,7 +5,6 @@
  */
 get_header();
 ?>
-
 <section class="bg-navy-900 py-24">
     <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
         <nav class="flex text-sm font-sans text-navy-300 mb-8" aria-label="Breadcrumb">
@@ -23,12 +22,10 @@ get_header();
                 </li>
             </ol>
         </nav>
-
         <h1 class="font-display text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
             Transparencia Activa
         </h1>
         <!--div class="w-14 h-[3px] bg-navy-400 mb-8 rounded-full"></div-->
-
         <div class="font-sans text-navy-200 text-base sm:text-lg max-w-7xl  space-y-5 text-justify">
             <p>
                 La Transparencia Activa es la información pública de carácter obligatorio que la Universidad Nacional de San Luis pone a disposición de la ciudadanía de forma completa, actualizada y accesible, sin necesidad de solicitud previa, en cumplimiento con lo establecido por el <a href="https://www.argentina.gob.ar/normativa/nacional/ley-27275-265949" target="_blank" rel="noopener noreferrer" class="text-navy-300 underline underline-offset-2 decoration-navy-500 hover:text-white hover:decoration-navy-300 transition-colors">Artículo 32 de la Ley Nacional N° 27.275</a> de Acceso a la Información Pública.
@@ -42,15 +39,10 @@ get_header();
         </div>
     </div>
 </section>
-
 <section class="bg-stone-50 py-16 sm:py-24">
     <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
-
-
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-
             <?php
-
             $config_categorias = [
                 'mision-y-vision' => [
                     'color' => 'bg-[#353F67]',
@@ -120,8 +112,6 @@ get_header();
                     $config = isset($config_categorias[$slug]) ? $config_categorias[$slug] : $config_categorias['default'];
             ?>
                     <a href="<?php the_permalink(); ?>" class="group flex flex-col overflow-hidden rounded-t-2xl rounded-b-lg bg-white border border-stone-200 shadow-sm hover:shadow-xl  transition-all duration-300">
-
-
                         <div class="<?php echo $config['color']; ?> p-5 flex items-center gap-4 text-white">
                             <div class="flex-shrink-0 p-2.5  rounded-lg  ">
                                 <div class="w-6 h-6">
@@ -132,16 +122,12 @@ get_header();
                                 <?php the_title(); ?>
                             </h2>
                         </div>
-
                         <div class="p-5 flex-grow flex flex-col bg-[#EAF5FB] justify-between">
                             <!--p class="text-stone-500 text-[14px] leading-relaxed line-clamp-3 mb-4">
                                 <?php
-
                                 echo get_the_excerpt() ? get_the_excerpt() : 'Información y normativa detallada sobre ' . mb_strtolower(get_the_title()) . '.';
                                 ?>
                             </p-->
-
-
                             <!--div class="flex items-center text-[11px] font-bold uppercase tracking-widest text-[#353F67] group-hover:translate-x-1 transition-transform">
                                 Ver más
                                 <svg class="w-4 h-4 ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -154,9 +140,7 @@ get_header();
                 endwhile;
                 wp_reset_postdata();
             endif; ?>
-
         </div>
-
         <div class="mt-16 border-t border-stone-200 pt-10 text-center">
             <p class="font-sans text-stone-500 text-sm mb-4">¿No encuentra la información que busca en estas categorías?</p>
             <a href="<?php echo esc_url(home_url('/solicitud-de-informacion')); ?>" class="inline-flex items-center gap-2 bg-navy-900 text-white hover:bg-navy-800 font-ui font-semibold text-sm px-6 py-3 rounded shadow transition-colors duration-150">
@@ -166,8 +150,6 @@ get_header();
                 </svg>
             </a>
         </div>
-
     </div>
 </section>
-
 <?php get_footer(); ?>
