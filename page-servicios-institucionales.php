@@ -128,7 +128,7 @@ get_header();
             <div class="mb-12">
                 <h3 class="font-ui text-stone-500 text-sm font-semibold uppercase tracking-widest mb-6 border-b border-stone-200 pb-2">Sede San Luis</h3>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                <div class="grid grid-cols-1">
                     <?php
 
                     $san_luis = [
@@ -143,12 +143,12 @@ get_header();
                     ];
 
                     foreach ($san_luis as $item) : ?>
-                        <div target="_blank" class="group bg-white border border-stone-200 rounded p-5 flex flex-col justify-between hover:border-navy-400 hover:shadow-md transition-all duration-300 min-h-[130px]">
+                        <div target="_blank" class="group bg-white  p-5 flex flex-col justify-between   transition-all duration-300">
 
 
 
                             <div class="flex items-start justify-between">
-                                <h4 class="font-ui font-semibold text-navy-900 group-hover:text-navy-700 transition-colors text-[14px] leading-snug pr-4">
+                                <h4 class="font-ui font-semibold text-navy-900  transition-colors text-[14px] leading-snug pr-4">
                                     <?php echo $item['t']; ?>
                                 </h4>
 
@@ -159,7 +159,7 @@ get_header();
             </div>
             <div class="mb-12">
                 <h3 class="font-ui text-stone-500 text-sm font-semibold uppercase tracking-widest mb-6 border-b border-stone-200 pb-2">Sede Villa Mercedes</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                <div class="grid grid-cols-1 ">
                     <?php
                     $villa_mercedes = [
                         ['t' => 'Facultad de Ciencias Económicas, Jurídicas y Sociales', 'l' => 'http://www.fcejs.unsl.edu.ar/', 'img' => 'fcejs.png'],
@@ -167,10 +167,10 @@ get_header();
                     ];
 
                     foreach ($villa_mercedes as $item) : ?>
-                        <div target="_blank" class="group bg-white border border-stone-200 rounded p-5 flex flex-col justify-between hover:border-navy-400 hover:shadow-md transition-all duration-300 min-h-[130px]">
+                        <div target="_blank" class="group bg-white   p-5 flex flex-col justify-between  transition-all duration-300 ">
 
                             <div class="flex items-start justify-between">
-                                <h4 class="font-ui font-semibold text-navy-900 group-hover:text-navy-700 transition-colors text-[14px] leading-snug pr-4"><?php echo $item['t']; ?></h4>
+                                <h4 class="font-ui font-semibold text-navy-900  transition-colors text-[14px] leading-snug pr-4"><?php echo $item['t']; ?></h4>
 
                             </div>
                         </div>
@@ -179,16 +179,16 @@ get_header();
             </div>
             <div>
                 <h3 class="font-ui text-stone-500 text-sm font-semibold uppercase tracking-widest mb-6 border-b border-stone-200 pb-2">Sede Villa de Merlo</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                <div class="grid grid-cols-1">
                     <?php
                     $villa_merlo = [
                         ['t' => 'Facultad de Turismo y Urbanismo', 'l' => 'http://ftu.unsl.edu.ar/', 'img' => 'ftu.png']
                     ];
                     foreach ($villa_merlo as $item) : ?>
-                        <div target="_blank" class="group bg-white border border-stone-200 rounded p-5 flex flex-col justify-between hover:border-navy-400 hover:shadow-md transition-all duration-300 min-h-[130px]">
+                        <div target="_blank" class="group bg-white   rounded p-5 flex flex-col justify-between   transition-all duration-300">
 
                             <div class="flex items-start justify-between">
-                                <h4 class="font-ui font-semibold text-navy-900 group-hover:text-navy-700 transition-colors text-[14px] leading-snug pr-4"><?php echo $item['t']; ?></h4>
+                                <h4 class="font-ui font-semibold text-navy-900  transition-colors text-[14px] leading-snug pr-4"><?php echo $item['t']; ?></h4>
 
                             </div>
                         </div>
@@ -213,7 +213,7 @@ get_header();
 
                 ];
                 foreach ($areas as $area) : ?>
-                    <a href="<?php echo $area['l']; ?>" target="_blank" class="group bg-white border border-stone-200 rounded p-5 flex flex-col justify-center hover:border-navy-400 hover:shadow-md transition-all duration-200 min-h-[100px]">
+                    <a href="<?php echo $area['l']; ?>" target="_blank" class="group bg-white  rounded p-5 flex flex-col justify-center hover:border-navy-400 hover:shadow-md transition-all duration-200">
                         <div class="flex items-start justify-between">
                             <h4 class="font-ui font-semibold text-navy-900 group-hover:text-navy-700 transition-colors text-[14px] leading-snug pr-4"><?php echo $area['t']; ?></h4>
                             <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-500 group-hover:translate-x-1 transition-all shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">

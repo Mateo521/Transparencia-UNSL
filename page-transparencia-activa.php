@@ -96,6 +96,10 @@ get_header();
                     'color' => 'bg-[#353F67]',
                     'icon' => '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10h4.757c1.246 0 2.257 1.01 2.257 2.257V20H5v-7.743C5 11.01 6.01 10 7.243 10H12v-2a2 2 0 114 0v2z" /></svg>'
                 ],
+                'gestion-de-la-informacion' => [
+                    'color' => 'bg-[#353F67]',
+                    'icon' => '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10h4.757c1.246 0 2.257 1.01 2.257 2.257V20H5v-7.743C5 11.01 6.01 10 7.243 10H12v-2a2 2 0 114 0v2z" /></svg>'
+                ],
                 'default' => [
                     'color' => 'bg-[#353F67]',
                     'icon' => '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>'
