@@ -97,8 +97,8 @@ get_header();
                     ],
                     [
                         'nombre' => 'SIU-HUARPE PROVEEDORES',
-                        'color'  => 'bg-[#ff6633]',
-                        'logo'   => 'logo-huarpe-blanco.png',
+                        'color'  => 'bg-[#FFD5C9]',
+                        'logo'   => 'logo-huarpe.png',
                         'desc'   => 'Portal de autogestión para proveedores',
                         'link'   => 'https://www.siu.edu.ar/siu-huarpe'
                     ],
