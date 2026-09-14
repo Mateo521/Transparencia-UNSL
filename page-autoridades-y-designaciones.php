@@ -9,7 +9,7 @@ get_header();
 
 <?php while (have_posts()) : the_post(); ?>
 
-    <section class="bg-navy-900 py-24">
+    <section class="bg-[#353F67] py-24">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
             <nav class="flex text-sm font-sans text-navy-300 mb-6" aria-label="Breadcrumb">
                 <ol class="inline-flex items-center space-x-2">
@@ -21,7 +21,7 @@ get_header();
                     if ($parent_id) : ?>
                         <li>
                             <div class="flex items-center">
-                                <svg class="w-4 h-4 text-navy-500 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg class="w-4 h-4 text-navy-100 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                                 </svg>
                                 <a href="<?php echo esc_url(get_permalink($parent_id)); ?>" class="hover:text-white transition-colors">
@@ -32,7 +32,7 @@ get_header();
                     <?php endif; ?>
                     <li>
                         <div class="flex items-center">
-                            <svg class="w-4 h-4 text-navy-500 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="w-4 h-4 text-navy-100 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                             </svg>
                             <span class="text-white ml-1 font-medium" aria-current="page">Autoridades y Designaciones</span>
@@ -98,7 +98,7 @@ get_header();
                 <div class="bg-white border border-stone-200 rounded-xl p-8 shadow-sm overflow-x-auto">
 
                     <div class="mb-6 flex justify-start sm:ml-8">
-                        <div class="bg-navy-900 text-white font-display font-bold text-lg px-8 py-3 rounded-lg shadow-sm">
+                        <div class="bg-[#353F67] text-white font-display font-bold text-lg px-8 py-3 rounded-lg shadow-sm">
                             Rector
                         </div>
                     </div>
@@ -218,20 +218,23 @@ get_header();
 
                     $secretarias = [
                         ['cargo' => 'Secretaría General', 'nombre' => 'Lic. Emiliano Daniel MUCH GHIGLIONE', 'link' => 'https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/RR1508-2025.pdf'],
-                        ['cargo' => 'Subsecretaría Legal y Técnica', 'nombre' => 'Abg. Ivana Romina MUZEVICH', 'link' => 'https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/RR1517-2025.pdf'],
+
                         ['cargo' => 'Secretaría Académica, de Innovación Educativa y Posgrado', 'nombre' => 'Dra. Rosa Alejandra LORENZO', 'link' => 'https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/RR1548-2025.pdf'],
                         ['cargo' => 'Subsecretaría de Formación Preuniversitaria', 'nombre' => 'Mgtr. Guido FERNANDEZ MARINONE', 'link' => 'https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/RR1519-2025.pdf'],
-                        ['cargo' => 'Subsecretaría de Formación de Posgrado', 'nombre' => 'Dra. Marina Beatriz FANTIN', 'link' => 'https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/RR1523-2025.pdf'],
+                        ['cargo' => 'Subsecretaría de Formación de Posgrado', 'nombre' => 'Dr. Sergio José FAVIER', 'link' => 'https://transparencia.unsl.edu.ar/wp-content/uploads/2026/09/RR1161-2026.pdf'],
                         ['cargo' => 'Secretaría de Investigación, Desarrollo e innovación', 'nombre' => 'Dr. Fabricio Damián CID', 'link' => 'https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/RR1518-2025.pdf'],
                         ['cargo' => 'Subsecretaría de Vinculación Territorial', 'nombre' => 'Dr. César Américo ALMEIDA', 'link' => 'https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/RR1521-2025.pdf'],
                         ['cargo' => 'Secretaría de Extensión Universitaria', 'nombre' => 'Esp. Oscar Ramón OJEDA', 'link' => 'https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/RR1516-2025.pdf'],
                         ['cargo' => 'Secretaría de Hacienda, Administración e Infraestructura', 'nombre' => 'C.P.N. María Alejandra ORELLANO', 'link' => 'https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/RR1514-2025.pdf'],
-                        ['cargo' => 'Secretaría Privada del Rector', 'nombre' => 'Esp. René César COVEPERTHWAITE', 'link' => 'https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/RR1530-2025.pdf'],
+                        ['cargo' => 'Secretaría de Relaciones Interinstitucionales', 'nombre' => 'Dr. Félix Daniel NIETO QUINTAS', 'link' => 'https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/RR1524-2025.pdf'],
+
                         ['cargo' => 'Secretaría de Asuntos Estudiantiles y Bienestar Universitario', 'nombre' => 'Prof. Rodolfo Nahuel SIRUR FLORES', 'link' => 'https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/RR1526-2025.pdf'],
                         ['cargo' => 'Subsecretaría de Asuntos Estudiantiles y Bienestar Universitario', 'nombre' => 'Ing. Nicolás Ariel RAMOS', 'link' => 'https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/RR1529-2025.pdf'],
-                        ['cargo' => 'Secretaría de Relaciones Interinstitucionales', 'nombre' => 'Dr. Félix Daniel NIETO QUINTAS', 'link' => 'https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/RR1524-2025.pdf'],
+
                         ['cargo' => 'Secretaría de Imagen y Comunicación Institucional', 'nombre' => 'Téc. Ramiro Gabriel REZZANO KLEMENT', 'link' => 'https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/RR1522-2025.pdf'],
                         ['cargo' => 'Secretaría de Logística', 'nombre' => 'Esp. Luis Ernesto GONZÁLEZ CRISTÓFANO', 'link' => 'https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/RR1527-2025.pdf'],
+                        ['cargo' => 'Secretaría Privada del Rector', 'nombre' => 'Esp. René César COVEPERTHWAITE', 'link' => 'https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/RR1530-2025.pdf'],
+
                     ];
 
                     foreach ($secretarias as $sec) :
@@ -243,7 +246,7 @@ get_header();
                                 <p class="font-sans text-navy-900 font-medium text-[15px] group-hover:text-navy-700 transition-colors"><?php echo $sec['nombre']; ?></p>
                             </div>
 
-                            <div class="mt-4 flex items-center gap-1.5 text-xs font-ui font-semibold text-navy-500 opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-wide">
+                            <div class="mt-4 flex items-center gap-1.5 text-xs font-ui font-semibold text-navy-100 opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-wide">
                                 <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
@@ -297,7 +300,7 @@ get_header();
                                 <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-navy-700 transition-colors">Integrantes del Consejo Superior</h3>
                                 <p class="font-sans text-xs text-stone-500 mt-0.5">Período 2025-2028</p>
                             </div>
-                            <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-500 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-100 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                             </svg>
                         </a>
@@ -308,7 +311,7 @@ get_header();
                                 <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-navy-700 transition-colors">Nómina completa de Autoridades</h3>
                                 <p class="font-sans text-xs text-stone-500 mt-0.5">Portal Institucional UNSL</p>
                             </div>
-                            <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-500 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-100 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                             </svg>
                         </a>

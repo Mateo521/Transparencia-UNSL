@@ -7,7 +7,7 @@ get_header();
 ?>
 
 
-<section class="bg-navy-900 py-16 sm:py-24">
+<section class="bg-[#353F67] py-16 sm:py-24">
     <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 text-center">
         <h1 class="font-display text-3xl sm:text-5xl font-bold text-white leading-tight">
             <?php echo get_the_title(); ?>
@@ -41,7 +41,7 @@ get_header();
             </div>
 
 
-            <a href="<?php echo esc_url(home_url('/')); ?>" class="inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white font-ui font-semibold text-sm px-8 py-3 rounded transition-colors duration-200">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="inline-flex items-center gap-2 bg-[#353F67] hover:bg-navy-800 text-white font-ui font-semibold text-sm px-8 py-3 rounded transition-colors duration-200">
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                 </svg>

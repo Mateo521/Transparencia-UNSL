@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Gestión de la Información
+ * Template Name: gestión de la información
  * Template Post Type: page
  */
 get_header();
@@ -17,7 +17,7 @@ get_header();
                 <img src="http://192.168.103.3/wp-content/themes/Carreras-UNSL/imagenes/carreras.jpg" alt="Fachada UNSL" class="w-full h-full object-cover object-center" onerror="this.src='https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2000&auto=format&fit=crop';" />
             <?php endif; ?>
 
-            <div class="absolute size-full inset-0 bg-navy-950/80 mix-blend-multiply"></div>
+            <div class="absolute size-full inset-0 bg-[#353F67]/80 mix-blend-multiply"></div>
         </div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
@@ -28,7 +28,7 @@ get_header();
                     </li>
                     <li>
                         <div class="flex items-center">
-                            <svg class="w-4 h-4 text-navy-500 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="w-4 h-4 text-navy-100 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                             </svg>
                             <a href="<?php echo esc_url(home_url('/transparencia-activa')); ?>" class="hover:text-white transition-colors">Transparencia Activa</a>
@@ -36,7 +36,7 @@ get_header();
                     </li>
                     <li>
                         <div class="flex items-center">
-                            <svg class="w-4 h-4 text-navy-500 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="w-4 h-4 text-navy-100 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                             </svg>
                             <span class="text-white ml-1 font-medium" aria-current="page"><?php the_title(); ?></span>
@@ -65,7 +65,6 @@ get_header();
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <?php
-
                 $sistemas_siu = [
                     [
                         'nombre' => 'SIU-ARAÍ',
@@ -131,54 +130,37 @@ get_header();
                         'link'   => 'https://www.siu.edu.ar/siu-wichi'
                     ]
                 ];
-
                 foreach ($sistemas_siu as $sistema) : ?>
                     <a href="<?php echo esc_url($sistema['link']); ?>" target="_blank" class="group bg-white rounded-t-xl rounded-b-md border border-stone-200 flex flex-col text-center shadow-sm hover:shadow-xl transition-all duration-300 transform  overflow-hidden min-h-[160px]">
-
-
                         <div class="<?php echo $sistema['color']; ?> w-full py-3 px-4 flex items-center justify-center relative">
-
                             <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none"></div>
-
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/siu/<?php echo $sistema['logo']; ?>"
                                 alt="Logo <?php echo $sistema['nombre']; ?>"
                                 class="h-10 sm:h-12 w-auto object-contain opacity-95 group-hover:opacity-100 transition-opacity drop-shadow-sm relative z-10"
                                 onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" />
-
                             <h3 class="hidden text-white font-display font-bold tracking-wide text-lg relative z-10 drop-shadow-sm">
                                 <?php echo esc_html($sistema['nombre']); ?>
                             </h3>
                         </div>
-
-
                         <div class="p-6 flex flex-col flex-1 items-center justify-between">
-
                             <p class="text-stone-600 text-base font-bold  leading-relaxed mb-6">
                                 <?php echo esc_html($sistema['desc']); ?>
                             </p>
-
-
                             <div class="mt-auto">
                                 <span class="inline-flex items-center justify-center px-5 py-1.5 border border-stone-300 rounded-full text-xs font-bold uppercase tracking-wider text-stone-600 group-hover:border-navy-600 group-hover:text-navy-700 group-hover:bg-navy-50/50 transition-all">
                                     Ver más
                                 </span>
                             </div>
-
                         </div>
-
                     </a>
                 <?php endforeach; ?>
-
-
-
             </div>
-
-            <div class="mt-16 py-4 px-4 flex items-center gap-3 text-stone-500 bg-stone-100 rounded-lg border border-stone-200">
-                <svg class="w-5 h-5 text-stone-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div class="mt-12 py-6 px-3  flex items-center gap-3 text-stone-500 bg-stone-100  ">
+                <svg class="w-5 h-5 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <p class="font-ui text-sm">
-                    Información actualizada al <strong><?php echo get_the_modified_date('j \d\e F \d\e Y'); ?></strong>.
+                    Información actualizada en <strong><?php echo get_the_modified_date('F \d\e Y'); ?></strong>.
                 </p>
             </div>
         </div>

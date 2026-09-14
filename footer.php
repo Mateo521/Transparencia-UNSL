@@ -3,7 +3,7 @@
 
 
 
-<footer class="bg-navy-950 border-t border-navy-900 pt-16 pb-8 mt-auto">
+<footer class="bg-[#353F67] border-t border-navy-900 pt-16 pb-8 mt-auto">
     <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
@@ -13,14 +13,14 @@
                     <img class="w-auto h-20 pb-3" src="<?php echo get_template_directory_uri(); ?>/logo-unsl-n.png" alt="Logo Universidad Nacional de San Luis">
                     <span class="block font-display text-2xl font-bold text-white">Portal de Transparencia</span>
                 </a>
-                <p class="font-sans text-sm text-navy-300  mb-6">
+                <p class="font-sans text-sm text-navy-100  mb-6">
                     Garantizando el derecho de acceso a la información pública, promoviendo la participación ciudadana y fortaleciendo la rendición de cuentas.
                 </p>
             </div>
 
             <div class="md:col-span-1">
                 <h3 class="font-ui text-sm font-semibold uppercase tracking-wider text-white mb-6">Enlaces Rápidos</h3>
-                <ul class="space-y-3 font-sans text-sm text-navy-300">
+                <ul class="space-y-3 font-sans text-sm text-navy-100">
                     <li><a href="<?php echo esc_url(home_url('/transparencia-activa')); ?>" class="hover:text-white transition-colors">Transparencia Activa</a></li>
                     <li><a href="<?php echo esc_url(home_url('/transparencia-proactiva')); ?>" class="hover:text-white transition-colors">Transparencia Proactiva</a></li>
                     <li><a href=" https://datosabiertos.unsl.edu.ar/organization/universidad-nacional-de-san-luis" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Portal de Datos Abiertos</a></li>
@@ -30,22 +30,22 @@
 
             <div class="md:col-span-1">
                 <h3 class="font-ui text-sm font-semibold uppercase tracking-wider text-white mb-6">Universidad Nacional de San Luis</h3>
-                <ul class="space-y-4 font-sans text-sm text-navy-300">
+                <ul class="space-y-4 font-sans text-sm text-navy-100">
                     <li class="flex items-start gap-3">
-                        <svg class="w-5 h-5 text-navy-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg class="w-5 h-5 text-navy-100 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
                         <span>Ejército de los Andes 950<br />San Luis, Argentina</span>
                     </li>
                     <li class="flex items-center gap-3">
-                        <svg class="w-5 h-5 text-navy-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg class="w-5 h-5 text-navy-100 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                         </svg>
                         <a href="https://www.unsl.edu.ar/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">www.unsl.edu.ar</a>
                     </li>
                     <li class="flex items-center gap-3">
-                        <svg class="w-5 h-5 text-navy-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg class="w-5 h-5 text-navy-100 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
                         <a href="https://www.unsl.edu.ar/index.php/menu/institucional/contacto" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Contacto Institucional</a>

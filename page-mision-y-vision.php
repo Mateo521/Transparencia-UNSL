@@ -17,7 +17,7 @@ get_header();
                 <img src="http://192.168.103.3/wp-content/themes/Carreras-UNSL/imagenes/carreras.jpg" alt="Fachada UNSL" class="w-full h-full object-cover object-center" onerror="this.src='https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2000&auto=format&fit=crop';" />
             <?php endif; ?>
 
-            <div class="absolute size-full inset-0 bg-navy-950/80 mix-blend-multiply"></div>
+            <div class="absolute size-full inset-0 bg-[#353F67]/80 mix-blend-multiply"></div>
 
         </div>
 
@@ -29,7 +29,7 @@ get_header();
                     </li>
                     <li>
                         <div class="flex items-center">
-                            <svg class="w-4 h-4 text-navy-500 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="w-4 h-4 text-navy-100 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                             </svg>
                             <a href="<?php echo esc_url(home_url('/transparencia-activa')); ?>" class="hover:text-white transition-colors">Transparencia Activa</a>
@@ -37,7 +37,7 @@ get_header();
                     </li>
                     <li>
                         <div class="flex items-center">
-                            <svg class="w-4 h-4 text-navy-500 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="w-4 h-4 text-navy-100 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                             </svg>
                             <span class="text-white ml-1 font-medium" aria-current="page"><?php the_title(); ?></span>

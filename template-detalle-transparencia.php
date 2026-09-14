@@ -18,7 +18,7 @@ get_header();
                     <img src="http://192.168.103.3/wp-content/themes/Carreras-UNSL/imagenes/carreras.jpg" alt="Fachada UNSL" class="w-full h-full object-cover object-center" />
                 <?php endif; ?>
 
-                <div class="absolute inset-0 bg-navy-950/80 mix-blend-multiply"></div>
+                <div class="absolute inset-0 bg-[#353F67]/80 mix-blend-multiply"></div>
 
 
 
@@ -39,7 +39,7 @@ get_header();
                         if ($parent_id) : ?>
                             <li>
                                 <div class="flex items-center">
-                                    <svg class="w-4 h-4 text-navy-500 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg class="w-4 h-4 text-navy-100 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                                     </svg>
                                     <a href="<?php echo esc_url(get_permalink($parent_id)); ?>" class="hover:text-white transition-colors">
@@ -51,7 +51,7 @@ get_header();
 
                         <li>
                             <div class="flex items-center">
-                                <svg class="w-4 h-4 text-navy-500 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg class="w-4 h-4 text-navy-100 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                                 </svg>
                                 <span class="text-white ml-1 font-medium" aria-current="page"><?php the_title(); ?></span>

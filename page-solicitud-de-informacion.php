@@ -6,7 +6,7 @@
 get_header();
 ?>
 
-<section class="bg-navy-900 py-24">
+<section class="bg-[#353F67] py-24">
     <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
         <nav class="flex text-sm font-sans text-navy-300 mb-8" aria-label="Breadcrumb">
             <ol class="inline-flex items-center space-x-2">
@@ -15,7 +15,7 @@ get_header();
                 </li>
                 <li>
                     <div class="flex items-center">
-                        <svg class="w-4 h-4 text-navy-500 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg class="w-4 h-4 text-navy-100 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                         </svg>
                         <span class="text-white ml-1 font-medium">Solicitudes de Acceso a la Información Pública</span>

@@ -37,14 +37,17 @@ get_header();
             <a href="<?php echo home_url('/transparencia-activa'); ?>" class="card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
                 <!--div class="h-1 w-full bg-navy-700 group-hover:bg-navy-500 transition-colors duration-200"></div-->
                 <div class="flex flex-col flex-1">
-                    <div class="mb-2 text-stone-300 text-sm font-semibold tracking-wider">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/fachada-1.jpg" alt="Fachada de la Universidad Nacional de San Luis" class="w-full h-48 object-cover rounded">
-                    </div>
-                    <div class="px-5 py-3">
-                        <h3 class="font-ui text-base font-semibold text-navy-900 group-hover:text-navy-600 transition-colors mb-3 leading-snug">
-                            Transparencia Activa
-                        </h3>
-                        <p class="font-sans text-sm text-stone-500  flex-1">
+                    <div class="bg-[#353F67]">
+                        <div class="flex items-center gap-2.5 p-5">
+                            <svg class="w-10 h-10 shrink-0 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6.5A2.5 2.5 0 0 1 6.5 4H20v15H6.5A2.5 2.5 0 0 0 4 21.5v-15Z" />
+                                <path stroke-linecap="round" d="M4 6.5v15M8 8h8m-8 4h8" />
+                            </svg>
+                            <h3 class="font-ui text-base font-semibold text-white leading-snug">
+                                Transparencia Activa
+                            </h3>
+                        </div>
+                        <p class="bg-[#EAF5FB] font-sans text-sm text-stone-500 px-5 py-3 flex-1 h-full">
                             Información puesta a disposición de la comunidad en cumplimiento del Artículo 32 de la Ley 27.275
                         </p>
                     </div>
@@ -52,14 +55,17 @@ get_header();
             </a>
             <a href="<?php echo home_url('/transparencia-proactiva'); ?>" class="js-modal-wip card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
                 <div class="flex flex-col flex-1">
-                    <div class="mb-2 text-stone-300 text-sm font-semibold tracking-wider">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/fachada-2.jpg" alt="Fachada de la Universidad Nacional de San Luis" class="w-full h-48 object-cover rounded">
-                    </div>
-                    <div class="px-5 py-3">
-                        <h3 class="font-ui text-base font-semibold text-navy-900 group-hover:text-navy-600 transition-colors mb-3 leading-snug">
-                            Transparencia Proactiva
-                        </h3>
-                        <p class="font-sans text-sm text-stone-500 flex-1">
+                    <div class="bg-[#353F67]">
+                        <div class="flex items-center gap-2.5 p-5">
+                            <svg class="w-10 h-10 shrink-0 text-white " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.5 21h13M12 21V7m0 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm2-1.8c3.073.661 2.467 2.8 5 2.8M5 8c3.359 0 2.192-2.115 5.012-2.793M7 9.556V7.75m0 1.806-1.95 4.393a.773.773 0 0 0 .37.962.785.785 0 0 0 .362.089h2.436a.785.785 0 0 0 .643-.335.776.776 0 0 0 .09-.716L7 9.556Zm10 0V7.313m0 2.243-1.95 4.393a.773.773 0 0 0 .37.962.786.786 0 0 0 .362.089h2.436a.785.785 0 0 0 .643-.335.775.775 0 0 0 .09-.716L17 9.556Z" />
+                            </svg>
+
+                            <h3 class="font-ui text-base font-semibold text-white leading-snug">
+                                Transparencia Proactiva
+                            </h3>
+                        </div>
+                        <p class="bg-[#EAF5FB] font-sans text-sm text-stone-500 px-5 py-3 flex-1 h-full">
                             Información relevante relacionada a la gestión institucional no comprendida en el Artículo 32 de la Ley 27.275
                         </p>
                     </div>
@@ -67,14 +73,17 @@ get_header();
             </a>
             <a href="https://datosabiertos.unsl.edu.ar/organization/universidad-nacional-de-san-luis" target="_blank" rel="noopener noreferrer" class="js-modal-wip card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
                 <div class="flex flex-col flex-1">
-                    <div class="mb-2 text-stone-300 text-sm font-semibold tracking-wider">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/datos-abiertos.jpg" alt="Portal de Datos Abiertos" class="w-full h-48 object-cover rounded">
-                    </div>
-                    <div class="px-5 py-3">
-                        <h3 class="font-ui text-base font-semibold text-navy-900 group-hover:text-navy-600 transition-colors mb-3 leading-snug">
-                            Portal de Datos Abiertos
-                        </h3>
-                        <p class="font-sans text-sm text-stone-500 flex-1">
+                    <div class="bg-[#353F67]">
+                        <div class="flex items-center gap-2.5 p-5">
+                            <svg class="w-10 h-10 shrink-0 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <circle cx="12" cy="12" r="8.5" />
+                                <path stroke-linecap="round" d="M3.5 12h17M12 3.5c2.1 2.3 3.2 5.1 3.2 8.5s-1.1 6.2-3.2 8.5c-2.1-2.3-3.2-5.1-3.2-8.5S9.9 5.8 12 3.5Z" />
+                            </svg>
+                            <h3 class="font-ui text-base font-semibold text-white leading-snug">
+                                Portal de Datos Abiertos
+                            </h3>
+                        </div>
+                        <p class="bg-[#EAF5FB] font-sans text-sm text-stone-500 px-5 py-3 flex-1 h-full">
                             Conjuntos de datos publicados en formato abierto y reutilizables para ser usados por la comunidad para diferentes objetivos.
                         </p>
                     </div>
@@ -83,14 +92,17 @@ get_header();
             <a href="<?php echo home_url('/solicitud-de-informacion'); ?>" class="card-item group bg-white border border-stone-200 rounded-lg overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-200 flex flex-col">
                 <!--div class="h-1 w-full bg-navy-700 group-hover:bg-navy-500 transition-colors duration-200"></div-->
                 <div class=" flex flex-col flex-1">
-                    <div class="mb-2 text-stone-300 text-sm font-semibold tracking-wider">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/solicitud-de-informacion.jpg" alt="Fachada de la Universidad Nacional de San Luis" class="w-full h-48 object-cover rounded">
-                    </div>
-                    <div class="px-5 py-3">
-                        <h3 class="font-ui text-base font-semibold text-navy-900 group-hover:text-navy-600 transition-colors mb-3 leading-snug">
-                            Solicitud de Información
-                        </h3>
-                        <p class="font-sans text-sm text-stone-500  flex-1">
+                    <div class="bg-[#353F67]">
+                        <div class="flex items-center gap-2.5 p-5">
+                            <svg class="w-10 h-10 shrink-0 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 7h1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h11.5M7 14h6m-6 3h6m0-10h.5m-.5 3h.5M7 7h3v3H7V7Z" />
+                            </svg>
+
+                            <h3 class="font-ui text-base font-semibold text-white leading-snug">
+                                Solicitud de Información
+                            </h3>
+                        </div>
+                        <p class="bg-[#EAF5FB] font-sans text-sm text-stone-500 px-5 py-3 flex-1 h-full">
                             Consultas de la comunidad respecto de la Información Pública aún no abierta en las otras secciones.
                         </p>
                     </div>
@@ -142,7 +154,7 @@ get_header();
         </div>
     </div>
 </section>
-<section class="bg-navy-950  py-20 sm:py-24">
+<section class="bg-[#353F67]  py-20 sm:py-24">
     <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 items-start">
             <div>
@@ -177,7 +189,7 @@ get_header();
                     <a href="https://portal.transparencia.gob.ar/" target="_blank" rel="noopener noreferrer"
                         class="inline-flex items-center gap-2.5 bg-white text-navy-900 font-ui font-semibold text-sm px-6 py-3 rounded hover:bg-navy-100 transition-colors duration-150 group">
                         Ingresá al Portal Nacional de Transparencia
-                        <svg class="w-4 h-4 text-navy-500 group-hover:translate-x-0.5 transition-transform" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <svg class="w-4 h-4 text-navy-100 group-hover:translate-x-0.5 transition-transform" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </a>
@@ -189,7 +201,7 @@ get_header();
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <p class="font-ui text-sm">
-                Información actualizada a <strong><?php echo esc_html( get_the_modified_date( 'F \d\e Y', get_queried_object_id() ) ); ?></strong>.
+                Información actualizada a <strong><?php echo esc_html(get_the_modified_date('F \d\e Y', get_queried_object_id())); ?></strong>.
             </p>
         </div>
     </div>

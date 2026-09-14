@@ -17,7 +17,7 @@ get_header();
                 <img src="http://192.168.103.3/wp-content/themes/Carreras-UNSL/imagenes/carreras.jpg" alt="Fachada UNSL" class="w-full h-full object-cover object-center" onerror="this.src='https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2000&auto=format&fit=crop';" />
             <?php endif; ?>
 
-            <div class="absolute size-full inset-0 bg-navy-950/80 mix-blend-multiply"></div>
+            <div class="absolute size-full inset-0 bg-[#353F67]/80 mix-blend-multiply"></div>
 
         </div>
 
@@ -29,7 +29,7 @@ get_header();
                     </li>
                     <li>
                         <div class="flex items-center">
-                            <svg class="w-4 h-4 text-navy-500 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="w-4 h-4 text-navy-100 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                             </svg>
                             <a href="<?php echo esc_url(home_url('/transparencia-activa')); ?>" class="hover:text-white transition-colors">Transparencia Activa</a>
@@ -37,7 +37,7 @@ get_header();
                     </li>
                     <li>
                         <div class="flex items-center">
-                            <svg class="w-4 h-4 text-navy-500 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="w-4 h-4 text-navy-100 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                             </svg>
                             <span class="text-white ml-1 font-medium" aria-current="page"><?php the_title(); ?></span>
@@ -101,7 +101,7 @@ get_header();
                     </div>
                 </a>
 
-                <a target="_blank" href="https://posgrado.unsl.edu.ar/" class="group bg-white border border-stone-200 rounded overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-300 flex flex-col">
+                <a target="_blank" href="https://carreras.unsl.edu.ar/carreras/?tipo=posgrado/" class="group bg-white border border-stone-200 rounded overflow-hidden hover:border-navy-400 hover:shadow-md transition-all duration-300 flex flex-col">
 
                     <div class="p-6 flex flex-col flex-1 justify-between">
                         <div>
@@ -201,26 +201,38 @@ get_header();
 
     <section class="bg-stone-50 py-20 border-t border-stone-200">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
-            <h2 class="font-display text-2xl font-bold text-navy-900 mb-10">Áreas Institucionales y Servicios</h2>
+            <h2 class="font-display text-2xl font-bold text-navy-900 mb-10">Servicios</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 <?php
                 $areas = [
-                    ['t' => 'Museo Interactivo de Ciencias Contacto', 'l' => '#'],
-                    ['t' => 'Auditorio Mauricio López', 'l' => 'https://seu.unsl.edu.ar/index.php/menu/gestionCultural'],
+                    ['t' => 'Espacios Museológicos', 'l' => ''],
+                    ['t' => 'Centro Cultural', 'l' => 'https://seu.unsl.edu.ar/index.php/menu/gestionCultural'],
+                    //  desplegable de Espacios Museológicos:
+                    // ['t' => 'Museo de la Radio y la Comunicación', 'l' => 'https://humanas.unsl.edu.ar/index.php/inicio/institucional/decanato/secretarias/extension/museo-de-la-radio-y-la-comunicacion/'],
+                    // ['t' => 'Museo de Farmacia', 'l' => ''],
+                    // ['t' => 'Museo de Historia de la Psicología', 'l' => ''],
+                    // ['t' => 'Museo Interactivo de Ciencias Contacto', 'l' => ''],
+                    # ['t' => 'Auditorio Mauricio López', 'l' => 'https://seu.unsl.edu.ar/index.php/menu/gestionCultural'],
                     #  ['t' => 'Secretaría de Relaciones Interinstitucionales', 'l' => 'https://relint.unsl.edu.ar/'],
                     #  ['t' => 'Secretaría de Asuntos Estudiantiles y Bienestar', 'l' => 'http://saebu.unsl.edu.ar'],
-                    ['t' => 'Red de Bibliotecas UNSL', 'l' => 'http://biblioteca.unsl.edu.ar'],
+                    #  ['t' => 'Red de Bibliotecas UNSL', 'l' => 'http://biblioteca.unsl.edu.ar'],
 
                 ];
                 foreach ($areas as $area) : ?>
-                    <a href="<?php echo $area['l']; ?>" target="_blank" class="group bg-white  rounded p-5 flex flex-col justify-center hover:border-navy-400 hover:shadow-md transition-all duration-200">
-                        <div class="flex items-start justify-between">
-                            <h4 class="font-ui font-semibold text-navy-900 group-hover:text-navy-700 transition-colors text-[14px] leading-snug pr-4"><?php echo $area['t']; ?></h4>
-                            <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-500 group-hover:translate-x-1 transition-all shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
+                    <?php if (!empty($area['l'])) : ?>
+                        <a href="<?php echo $area['l']; ?>" target="_blank" class="group bg-white  rounded p-5 flex flex-col justify-center hover:border-navy-400 hover:shadow-md transition-all duration-200">
+                            <div class="flex items-start justify-between">
+                                <h4 class="font-ui font-semibold text-navy-900 group-hover:text-navy-700 transition-colors text-[14px] leading-snug pr-4"><?php echo $area['t']; ?></h4>
+                                <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-100 group-hover:translate-x-1 transition-all shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </div>
+                        </a>
+                    <?php else : ?>
+                        <div class="bg-white rounded p-5 flex flex-col justify-center">
+                            <h4 class="font-ui font-semibold text-navy-900 text-[14px] leading-snug"><?php echo $area['t']; ?></h4>
                         </div>
-                    </a>
+                    <?php endif; ?>
                 <?php endforeach; ?>
             </div>
         </div>

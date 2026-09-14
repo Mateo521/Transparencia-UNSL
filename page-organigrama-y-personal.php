@@ -9,7 +9,7 @@ get_header();
 
 <?php while (have_posts()) : the_post(); ?>
 
-    <section class="bg-navy-900 py-24">
+    <section class="bg-[#353F67] py-24">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
             <nav class="flex text-sm font-sans text-navy-300 mb-6" aria-label="Breadcrumb">
                 <ol class="inline-flex items-center space-x-2">
@@ -21,7 +21,7 @@ get_header();
                     if ($parent_id) : ?>
                         <li>
                             <div class="flex items-center">
-                                <svg class="w-4 h-4 text-navy-500 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg class="w-4 h-4 text-navy-100 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                                 </svg>
                                 <a href="<?php echo esc_url(get_permalink($parent_id)); ?>" class="hover:text-white transition-colors">
@@ -32,7 +32,7 @@ get_header();
                     <?php endif; ?>
                     <li>
                         <div class="flex items-center">
-                            <svg class="w-4 h-4 text-navy-500 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="w-4 h-4 text-navy-100 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                             </svg>
                             <span class="text-white ml-1 font-medium" aria-current="page">Organigrama y Personal</span>
@@ -57,7 +57,7 @@ get_header();
                 <div class="bg-white border border-stone-200 rounded-xl p-8 shadow-sm overflow-x-auto">
 
                     <div class="mb-6 flex justify-start sm:ml-8">
-                        <div class="bg-navy-900 text-white font-display font-bold text-lg px-8 py-3 rounded-lg shadow-sm">
+                        <div class="bg-[#353F67] text-white font-display font-bold text-lg px-8 py-3 rounded-lg shadow-sm">
                             Rector
                         </div>
                     </div>
@@ -199,7 +199,7 @@ get_header();
                             <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-navy-700 transition-colors">Integrantes del Consejo Superior</h3>
                             <p class="font-sans text-xs text-stone-500 mt-0.5">Período 2025-2028</p>
                         </div>
-                        <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-500 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-100 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
                     </a>
@@ -210,7 +210,7 @@ get_header();
                             <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-navy-700 transition-colors">Nómina completa de Autoridades</h3>
                             <p class="font-sans text-xs text-stone-500 mt-0.5">Portal Institucional UNSL</p>
                         </div>
-                        <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-500 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-100 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
                     </a>

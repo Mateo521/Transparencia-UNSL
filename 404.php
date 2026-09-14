@@ -10,7 +10,7 @@ get_header();
     
     <div class="absolute inset-0 z-0">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/fachada-2.jpg" alt="Fondo UNSL" class="w-full h-full object-cover object-center"  />
-        <div class="absolute inset-0 bg-navy-950/90 mix-blend-multiply"></div>
+        <div class="absolute inset-0 bg-[#353F67]/90 mix-blend-multiply"></div>
 
     </div>
 
