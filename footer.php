@@ -55,9 +55,9 @@
 
         </div>
 
-        <div class="pt-8 border-t border-navy-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-sans text-navy-400">
+        <div class="pt-8 border-t border-navy-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-sans text-white">
             <div>
-                &copy; <?php echo date('Y'); ?> Universidad Nacional de San Luis
+            <?php echo date('Y'); ?> Universidad Nacional de San Luis
             </div>
             <div class="flex space-x-6">
                 <a href="https://www.argentina.gob.ar/normativa/nacional/ley-27275-265949" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Ley Nº 27.275</a>

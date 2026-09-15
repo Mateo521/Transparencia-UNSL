@@ -46,7 +46,7 @@ function unsl_transparencia_scripts()
     );
 }
 add_action('wp_enqueue_scripts', 'unsl_transparencia_scripts');
- 
+
 
 class Tailwind_Nav_Walker extends Walker_Nav_Menu
 {
@@ -126,3 +126,84 @@ class Tailwind_Nav_Walker extends Walker_Nav_Menu
         $output .= apply_filters('walker_nav_menu_start_el', $item_output, $item, $depth, $args);
     }
 }
+
+
+
+
+function shortcode_grafico_presupuesto()
+{
+    ob_start(); ?>
+
+    <div class="max-w-3xl  my-12 bg-white p-6 rounded-lg shadow-sm border border-stone-200">
+        <h3 class="text-xl font-bold text-slate-800 mb-4 text-justify">Ejecución del Gasto por Fuente y por Inciso (1° Semestre 2026)</h3>
+        <canvas id="graficoPresupuesto"></canvas>
+        <p class="text-xs text-stone-500 mt-4">* Fuente SIU Pilagá - Ejecución Presupuestaria del Devengado al 30-06-2026</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const ctx = document.getElementById('graficoPresupuesto').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Inciso 1', 'Inciso 2', 'Inciso 3', 'Inciso 4', 'Inciso 5'],
+                    datasets: [{
+                            label: 'Fuente 11',
+                            data: [47135434084.87, 74808779.56, 844669877.21, 21454729.83, 85870146.44],
+                            backgroundColor: 'rgba(53, 63, 103, 0.8)'
+                        },
+                        {
+                            label: 'Fuente 12',
+                            data: [0, 435717889.58, 306777168.93, 241077582.57, 332336913.67],
+                            backgroundColor: 'rgba(37, 99, 235, 0.8)'
+                        },
+                        {
+                            label: 'Fuente 15',
+                            data: [0, 0, 15582.62, 0, 0],
+                            backgroundColor: 'rgba(16, 185, 129, 0.8)'
+                        },
+                        {
+                            label: 'Fuente 16',
+                            data: [5412347.71, 182238706.29, 277599597.10, 637311263.69, 319343645.79],
+                            backgroundColor: 'rgba(245, 158, 11, 0.8)'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        x: {
+                            stacked: true
+                        },
+                        y: {
+                            stacked: true,
+                            ticks: {
+                                callback: function(value) {
+                                    return '$' + (value / 1000000).toLocaleString('es-AR') + ' M';
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.dataset.label + ': ' + new Intl.NumberFormat('es-AR', {
+                                        style: 'currency',
+                                        currency: 'ARS'
+                                    }).format(context.raw);
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+<?php
+    return ob_get_clean();
+}
+add_shortcode('grafico_presupuesto', 'shortcode_grafico_presupuesto');
+ 

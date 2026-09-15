@@ -74,7 +74,7 @@ get_header();
                     </div>
                     <div class="bg-white border border-stone-200  p-6 sm:p-8 flex flex-col sm:flex-row items-center sm:items-start gap-6 shadow-sm hover:shadow-md transition-shadow">
                         <div class="w-36 h-36 bg-stone-100 rounded-full flex items-center justify-center border-4 border-white shadow-sm flex-shrink-0 overflow-hidden">
-                            <img class="size-full" src="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/brusasca.png" alt="Mgtr. María Claudia Brusasca">
+                            <img class="size-full" src="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/09/brusasca.jpeg" alt="Mgtr. María Claudia Brusasca">
                         </div>
                         <div class="text-center sm:text-left flex-1">
                             <h3 class="font-display text-xl font-bold text-navy-900">Mgtr. María Claudia Brusasca</h3>
@@ -92,116 +92,7 @@ get_header();
             </div>
 
 
-            <!--div class="mb-20">
-                <h2 class="font-display text-2xl font-bold text-navy-900 mb-8 border-b border-stone-200 pb-4">Organigrama</h2>
-
-                <div class="bg-white border border-stone-200 rounded-xl p-8 shadow-sm overflow-x-auto">
-
-                    <div class="mb-6 flex justify-start sm:ml-8">
-                        <div class="bg-[#353F67] text-white font-display font-bold text-lg px-8 py-3 rounded-lg shadow-sm">
-                            Rector
-                        </div>
-                    </div>
-
-
-                    <div class="pl-8 sm:pl-16 border-l-2 border-stone-200 space-y-10 ml-6 sm:ml-14">
-
-
-                        <div class="relative">
-                            <div class="absolute -left-8 sm:-left-16 top-4 w-8 sm:w-16 h-0.5 bg-stone-200"></div>
-                            <h3 class="font-ui font-bold text-navy-800 uppercase tracking-widest text-sm mb-5 bg-stone-100 border border-stone-200 inline-block px-5 py-2 rounded-full">
-                                Unidad de gestión de funciones sustantivas
-                            </h3>
-                            <ul class="space-y-4 pl-2 sm:pl-6">
-                                <li class="font-sans text-stone-800 text-base">
-                                    <span class="font-bold mr-1">1.</span> Secretaría Académica, de Innovación Educativa y Posgrado
-                                    <ul class="pl-6 mt-3 space-y-2 border-l border-stone-200 ml-2">
-                                        <li class="font-sans text-stone-600 text-sm flex items-start sm:items-center before:content-[''] before:w-4 before:h-px before:bg-stone-300 before:mr-3 before:mt-2.5 sm:before:mt-0">
-                                            <span class="font-bold mr-1">1.1.</span> Subsecretaría de Formación Preuniversitaria
-                                        </li>
-                                        <li class="font-sans text-stone-600 text-sm flex items-start sm:items-center before:content-[''] before:w-4 before:h-px before:bg-stone-300 before:mr-3 before:mt-2.5 sm:before:mt-0">
-                                            <span class="font-bold mr-1">1.2.</span> Subsecretaría de Formación de Posgrado
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="font-sans text-stone-800 text-base">
-                                    <span class="font-bold mr-1">2.</span> Secretaría de Investigación, Desarrollo e Innovación
-                                    <ul class="pl-6 mt-3 space-y-2 border-l border-stone-200 ml-2">
-                                        <li class="font-sans text-stone-600 text-sm flex items-start sm:items-center before:content-[''] before:w-4 before:h-px before:bg-stone-300 before:mr-3 before:mt-2.5 sm:before:mt-0">
-                                            <span class="font-bold mr-1">2.1.</span> Subsecretaría de Vinculación Territorial
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="font-sans text-stone-800 text-base">
-                                    <span class="font-bold mr-1">3.</span> Secretaría de Extensión Universitaria
-                                </li>
-                            </ul>
-                        </div>
-
-
-                        <div class="relative">
-                            <div class="absolute -left-8 sm:-left-16 top-4 w-8 sm:w-16 h-0.5 bg-stone-200"></div>
-                            <h3 class="font-ui font-bold text-navy-800 uppercase tracking-widest text-sm mb-5 bg-stone-100 border border-stone-200 inline-block px-5 py-2 rounded-full">
-                                Unidad de gestión política
-                            </h3>
-                            <ul class="space-y-4 pl-2 sm:pl-6">
-                                <li class="font-sans text-stone-800 text-base">
-                                    <span class="font-bold mr-1">4.</span> Secretaría General
-                                    <ul class="pl-6 mt-3 space-y-2 border-l border-stone-200 ml-2">
-                                        <li class="font-sans text-stone-600 text-sm flex items-start sm:items-center before:content-[''] before:w-4 before:h-px before:bg-stone-300 before:mr-3 before:mt-2.5 sm:before:mt-0">
-                                            <span class="font-bold mr-1">4.1.</span> Subsecretaría Legal y Técnica
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="font-sans text-stone-800 text-base">
-                                    <span class="font-bold mr-1">5.</span> Secretaría de Relaciones Interinstitucionales
-                                </li>
-                            </ul>
-                        </div>
-
-
-                        <div class="relative">
-                            <div class="absolute -left-8 sm:-left-16 top-4 w-8 sm:w-16 h-0.5 bg-stone-200"></div>
-                            <h3 class="font-ui font-bold text-navy-800 uppercase tracking-widest text-sm mb-5 bg-stone-100 border border-stone-200 inline-block px-5 py-2 rounded-full">
-                                Unidad de gestión administrativa
-                            </h3>
-                            <ul class="space-y-4 pl-2 sm:pl-6">
-                                <li class="font-sans text-stone-800 text-base">
-                                    <span class="font-bold mr-1">6.</span> Secretaría de Asuntos Estudiantiles y Bienestar Universitario
-                                    <ul class="pl-6 mt-3 space-y-2 border-l border-stone-200 ml-2">
-                                        <li class="font-sans text-stone-600 text-sm flex items-start sm:items-center before:content-[''] before:w-4 before:h-px before:bg-stone-300 before:mr-3 before:mt-2.5 sm:before:mt-0">
-                                            <span class="font-bold mr-1">6.1.</span> Subsecretaría de Asuntos Estudiantiles y Bienestar Universitario
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="font-sans text-stone-800 text-base">
-                                    <span class="font-bold mr-1">7.</span> Secretaría de Hacienda, Administración e Infraestructura
-                                </li>
-                            </ul>
-                        </div>
-
-
-                        <div class="relative">
-                            <div class="absolute -left-8 sm:-left-16 top-4 w-8 sm:w-16 h-0.5 bg-stone-200"></div>
-                            <h3 class="font-ui font-bold text-navy-800 uppercase tracking-widest text-sm mb-5 bg-stone-100 border border-stone-200 inline-block px-5 py-2 rounded-full">
-                                Unidad de gestión operativa
-                            </h3>
-                            <ul class="space-y-4 pl-2 sm:pl-6">
-                                <li class="font-sans text-stone-800 text-base">
-                                    <span class="font-bold mr-1">8.</span> Secretaría Privada del Rector
-                                </li>
-                                <li class="font-sans text-stone-800 text-base">
-                                    <span class="font-bold mr-1">9.</span> Secretaría de Logística
-                                </li>
-                                <li class="font-sans text-stone-800 text-base">
-                                    <span class="font-bold mr-1">10.</span> Secretaría de Imagen y Comunicación Institucional
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div-->
+            
 
 
             <div class="mb-16">

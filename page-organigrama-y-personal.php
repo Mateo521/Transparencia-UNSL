@@ -163,12 +163,34 @@ get_header();
             </div>
 
 
+            <div class="mb-20">
+                <h2 class="font-display text-2xl font-bold text-navy-900 mb-8 border-b border-stone-200 pb-4">Listado de Personal</h2>
+
+                <div class="space-y-4">
+
+                    <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/OCS27-25-Estructurta-de-Gestion.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
+
+                        <div class="flex-1">
+                            <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">Nómina de Personal</h3>
+                            <p class="font-sans text-xs text-stone-500 mt-0.5">Documento PDF</p>
+                        </div>
+                        <svg class="w-5 h-5 text-stone-300 group-hover:text-red-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                    </a>
+
+
+
+                </div>
+
+
+            </div>
 
 
 
 
             <div>
-                <h2 class="font-display text-xl font-bold text-navy-900 mb-6 border-b border-stone-200 pb-3">Estructura y normativa</h2>
+                <h2 class="font-display text-2xl font-bold text-navy-900 mb-8 border-b border-stone-200 pb-4">Estructura y normativa</h2>
                 <div class="space-y-4">
 
                     <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/OCS27-25-Estructurta-de-Gestion.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
