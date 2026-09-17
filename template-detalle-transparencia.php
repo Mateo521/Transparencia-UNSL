@@ -93,16 +93,16 @@ get_header();
 
 
                     .contenido-dinamico ul {
-                        list-style: none;
+                        
                         padding: 0;
                         margin: 2rem 0;
                         display: grid;
                         /*    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));*/
-                        gap: 1rem;
+                        
                     }
 
                     .contenido-dinamico ul li {
-                        margin: 0;
+                        margin: 0 0 0 20px;
                     }
 
                     .contenido-dinamico ul li a {

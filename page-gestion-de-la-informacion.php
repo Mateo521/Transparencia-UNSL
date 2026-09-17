@@ -52,7 +52,7 @@ get_header();
         </div>
     </section>
 
-    <section class="bg-white py-16 sm:py-20">
+    <section class="py-12 bg-stone-50 sm:py-10">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 text-justify">
             <div class="prose prose-stone max-w-7xl mx-auto font-sans text-stone-600 leading-relaxed">
                 <p class="text-lg">

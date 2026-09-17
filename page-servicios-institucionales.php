@@ -106,7 +106,7 @@ get_header();
 
 
 
-    <section class="bg-white py-16 sm:py-20">
+    <section class="py-12 bg-stone-50 sm:py-10">
 
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
 
@@ -252,7 +252,7 @@ get_header();
                 ];
                 foreach ($areas as $area) : ?>
                     <?php if (!empty($area['l'])) : ?>
-                        <a href="<?php echo $area['l']; ?>" target="_blank" class="group bg-white  rounded p-5 flex flex-col justify-center hover:border-navy-400 hover:shadow-md transition-all duration-200">
+                        <a href="<?php echo $area['l']; ?>" target="_blank" class="group bg-white  border-[#d0d0d0]  border-2 rounded-full p-5 flex flex-col justify-center hover:border-navy-400 hover:shadow-md transition-all duration-200">
                             <div class="flex items-start justify-between">
                                 <h4 class="font-ui font-semibold text-navy-900 group-hover:text-navy-700 transition-colors text-[14px] leading-snug pr-4"><?php echo $area['t']; ?></h4>
                                 <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-100 group-hover:translate-x-1 transition-all shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -261,7 +261,7 @@ get_header();
                             </div>
                         </a>
                     <?php else : ?>
-                        <div class="bg-white rounded p-5 flex flex-col justify-center">
+                        <div class="bg-white  border-[#d0d0d0]  border-2 rounded-full p-5 flex flex-col justify-center">
                             <h4 class="font-ui font-semibold text-navy-900 text-[14px] leading-snug"><?php echo $area['t']; ?></h4>
                         </div>
                     <?php endif; ?>

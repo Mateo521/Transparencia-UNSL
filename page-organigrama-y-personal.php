@@ -216,46 +216,44 @@ get_header();
                 <p class="text-stone-700 py-3">Las ordenanzas y antecedentes que dan sustento normativo a la estructura organizacional de
                     gestión actual son las siguientes:</p>
 
-                <div class="space-y-4">
+                <div>
 
+                    <div class="space-y-4">
 
-                 <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/OCS27-25-Estructurta-de-Gestion.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
+                        <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/OCS27-25-Estructurta-de-Gestion.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
 
-                        <div class="flex-1">
-                            <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">OCS 27/2025 (período 2025-2028)</h3>
-                            <p class="font-sans text-xs text-stone-500 mt-0.5">Documento PDF</p>
-                        </div>
-                        <svg class="w-5 h-5 text-stone-300 group-hover:text-red-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                        </svg>
-                    </a>
+                            <div class="flex-1">
+                                <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">Estructura de Gestión OCS 27-2025</h3>
+                                <p class="font-sans text-xs text-stone-500 mt-0.5">Período 2025-2028</p>
+                            </div>
+                            <svg class="w-5 h-5 text-stone-300 group-hover:text-red-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg>
+                        </a>
 
-                     <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/09/OCS-41.2022-Estructura-de-Gestion-de-Rectorado.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
+                        <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/09/OCS41-2022-Estructura-de-Gestion-de-Rectorado.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
 
-                        <div class="flex-1">
-                            <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">OCS 41/2022 (período 2022-2025)</h3>
-                            <p class="font-sans text-xs text-stone-500 mt-0.5">Documento PDF</p>
-                        </div>
-                        <svg class="w-5 h-5 text-stone-300 group-hover:text-red-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                        </svg>
-                    </a>
+                            <div class="flex-1">
+                                <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">Estructura de Gestión OCS 41-2022</h3>
+                                <p class="font-sans text-xs text-stone-500 mt-0.5">Período 2022-2025</p>
+                            </div>
+                            <svg class="w-5 h-5 text-stone-300 group-hover:text-red-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg>
+                        </a>
 
-                     <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/09/OCS-39.2019-Estructura-de-Gestion-de-Rectorado.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
+                        <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/09/OCS39-2019-Estructura-de-Gestion-de-Rectorado.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
 
-                        <div class="flex-1">
-                            <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">OCS 39/2019 (período 2019-2022)</h3>
-                            <p class="font-sans text-xs text-stone-500 mt-0.5">Documento PDF</p>
-                        </div>
-                        <svg class="w-5 h-5 text-stone-300 group-hover:text-red-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                        </svg>
-                    </a>
+                            <div class="flex-1">
+                                <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">Estructura de Gestión OCS 39-2019</h3>
+                                <p class="font-sans text-xs text-stone-500 mt-0.5">Período 2019-2022</p>
+                            </div>
+                            <svg class="w-5 h-5 text-stone-300 group-hover:text-red-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg>
+                        </a>
 
-
-
-
-
+                    </div>
                 </div>
 
 
@@ -288,45 +286,7 @@ get_header();
 
 
 
-            <div>
-                <h2 class="font-display text-2xl font-bold text-navy-900 mb-8 border-b border-stone-200 pb-4">Estructura y normativa</h2>
-                <div class="space-y-4">
 
-                    <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/OCS27-25-Estructurta-de-Gestion.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
-
-                        <div class="flex-1">
-                            <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">Estructura de Gestión OCS 27-2025</h3>
-                            <p class="font-sans text-xs text-stone-500 mt-0.5">Período 2025-2028</p>
-                        </div>
-                        <svg class="w-5 h-5 text-stone-300 group-hover:text-red-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                        </svg>
-                    </a>
-
-                    <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/09/OCS41-2022-Estructura-de-Gestion-de-Rectorado.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
-
-                        <div class="flex-1">
-                            <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">Estructura de Gestión OCS 41-2022</h3>
-                            <p class="font-sans text-xs text-stone-500 mt-0.5">Período 2022-2025</p>
-                        </div>
-                        <svg class="w-5 h-5 text-stone-300 group-hover:text-red-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                        </svg>
-                    </a>
-
-                    <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/09/OCS39-2019-Estructura-de-Gestion-de-Rectorado.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-navy-400 hover:shadow-sm transition-all group">
-
-                        <div class="flex-1">
-                            <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">Estructura de Gestión OCS 39-2019</h3>
-                            <p class="font-sans text-xs text-stone-500 mt-0.5">Período 2019-2022</p>
-                        </div>
-                        <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-100 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                    </a>
-
-                </div>
-            </div>
 
             <div class="mt-16 py-4 px-3  flex items-center gap-3 text-stone-500 bg-stone-100 ">
                 <svg class="w-5 h-5 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">

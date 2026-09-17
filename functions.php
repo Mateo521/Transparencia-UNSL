@@ -7,7 +7,7 @@
  */
 
 /** Simulador Salarial — los montos se editan en inc/data/salarios-unsl.php */
-require_once get_template_directory() . '/inc/shortcodes/simulador-salarial.php';
+require_once get_template_directory() . '/inc/shortcodes/shortcode-simulador-salarial.php';
 
 
 
@@ -142,9 +142,47 @@ function shortcode_grafico_presupuesto()
 {
     ob_start(); ?>
 
-    <div class="max-w-3xl  my-12 bg-white p-6 rounded-lg shadow-sm border border-stone-200">
+    <div class="max-w-5xl my-12 bg-white p-6 rounded-lg shadow-sm border border-stone-200">
         <h3 class="text-xl font-bold text-slate-800 mb-4 text-justify">Ejecución del Gasto por Fuente y por Inciso (1° Semestre 2026)</h3>
-        <canvas id="graficoPresupuesto"></canvas>
+        <div class="flex flex-col lg:flex-row lg:items-start gap-8">
+            <div class="w-full lg:w-1/3 flex justify-center items-center">
+                <div class="relative w-full max-w-55 aspect-square">
+                    <canvas id="graficoPresupuesto"></canvas>
+                </div>
+            </div>
+            <div class="w-full lg:w-2/3 overflow-x-auto">
+            <table class="min-w-full divide-y divide-stone-200 text-sm">
+                <caption class="mb-3 text-left font-semibold text-slate-800">Detalle de ejecución por fuente e inciso</caption>
+                <thead class="bg-stone-50">
+                    <tr>
+                        <th scope="col" class="px-4 py-3 text-left font-semibold text-stone-700">Fuente</th>
+                        <th scope="col" class="px-4 py-3 text-right font-semibold text-stone-700">Inciso 1</th>
+                        <th scope="col" class="px-4 py-3 text-right font-semibold text-stone-700">Inciso 2</th>
+                        <th scope="col" class="px-4 py-3 text-right font-semibold text-stone-700">Inciso 3</th>
+                        <th scope="col" class="px-4 py-3 text-right font-semibold text-stone-700">Inciso 4</th>
+                        <th scope="col" class="px-4 py-3 text-right font-semibold text-stone-700">Inciso 5</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-stone-100 bg-white text-stone-600">
+                    <?php
+                    $datos_presupuesto = array(
+                        'Fuente 11' => array(47135434084.87, 74808779.56, 844669877.21, 21454729.83, 85870146.44),
+                        'Fuente 12' => array(0, 435717889.58, 306777168.93, 241077582.57, 332336913.67),
+                        'Fuente 15' => array(0, 0, 15582.62, 0, 0),
+                        'Fuente 16' => array(5412347.71, 182238706.29, 277599597.10, 637311263.69, 319343645.79),
+                    );
+                    foreach ($datos_presupuesto as $fuente => $importes) : ?>
+                        <tr class="hover:bg-stone-50">
+                            <th scope="row" class="whitespace-nowrap px-4 py-3 text-left font-semibold text-slate-700"><?php echo esc_html($fuente); ?></th>
+                            <?php foreach ($importes as $importe) : ?>
+                                <td class="whitespace-nowrap px-4 py-3 text-right tabular-nums"><?php echo esc_html(number_format($importe, 2, ',', '.')); ?></td>
+                            <?php endforeach; ?>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+            </div>
+        </div>
         <p class="text-xs text-stone-500 mt-4">* Fuente SIU Pilagá - Ejecución Presupuestaria del Devengado al 30-06-2026</p>
     </div>
 
@@ -153,51 +191,34 @@ function shortcode_grafico_presupuesto()
         document.addEventListener("DOMContentLoaded", function() {
             const ctx = document.getElementById('graficoPresupuesto').getContext('2d');
             new Chart(ctx, {
-                type: 'bar',
+                type: 'pie',
                 data: {
-                    labels: ['Inciso 1', 'Inciso 2', 'Inciso 3', 'Inciso 4', 'Inciso 5'],
+                
+                    labels: ['Fuente 11', 'Fuente 12', 'Fuente 15', 'Fuente 16'],
                     datasets: [{
-                            label: 'Fuente 11',
-                            data: [47135434084.87, 74808779.56, 844669877.21, 21454729.83, 85870146.44],
-                            backgroundColor: 'rgba(53, 63, 103, 0.8)'
-                        },
-                        {
-                            label: 'Fuente 12',
-                            data: [0, 435717889.58, 306777168.93, 241077582.57, 332336913.67],
-                            backgroundColor: 'rgba(37, 99, 235, 0.8)'
-                        },
-                        {
-                            label: 'Fuente 15',
-                            data: [0, 0, 15582.62, 0, 0],
-                            backgroundColor: 'rgba(16, 185, 129, 0.8)'
-                        },
-                        {
-                            label: 'Fuente 16',
-                            data: [5412347.71, 182238706.29, 277599597.10, 637311263.69, 319343645.79],
-                            backgroundColor: 'rgba(245, 158, 11, 0.8)'
-                        }
-                    ]
+                        label: 'Ejecución por fuente',
+                        data: [
+                            47135434084.87 + 74808779.56 + 844669877.21 + 21454729.83 + 85870146.44,
+                            435717889.58 + 306777168.93 + 241077582.57 + 332336913.67,
+                            15582.62,
+                            5412347.71 + 182238706.29 + 277599597.10 + 637311263.69 + 319343645.79
+                        ],
+                        backgroundColor: [
+                            'rgba(53, 63, 103, 0.8)',
+                            'rgba(37, 99, 235, 0.8)',
+                            'rgba(16, 185, 129, 0.8)',
+                            'rgba(245, 158, 11, 0.8)'
+                        ]
+                    }]
                 },
                 options: {
                     responsive: true,
-                    scales: {
-                        x: {
-                            stacked: true
-                        },
-                        y: {
-                            stacked: true,
-                            ticks: {
-                                callback: function(value) {
-                                    return '$' + (value / 1000000).toLocaleString('es-AR') + ' M';
-                                }
-                            }
-                        }
-                    },
+                    maintainAspectRatio: true,
                     plugins: {
                         tooltip: {
                             callbacks: {
                                 label: function(context) {
-                                    return context.dataset.label + ': ' + new Intl.NumberFormat('es-AR', {
+                                    return context.label + ': ' + new Intl.NumberFormat('es-AR', {
                                         style: 'currency',
                                         currency: 'ARS'
                                     }).format(context.raw);

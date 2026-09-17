@@ -52,7 +52,7 @@ get_header();
         </div>
     </section>
 
-    <section class="bg-white py-16 sm:py-20">
+    <section class="py-12 bg-stone-50 sm:py-10">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
             <h2 class="font-display text-2xl font-bold text-navy-900 mb-8 border-b border-stone-200 pb-4">Misión</h2>
 

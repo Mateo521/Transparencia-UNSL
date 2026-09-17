@@ -70,7 +70,17 @@ get_header();
                     'description' => 'Difusión de producción académica y científica y red de bibliotecas.',
                     'icon' => '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>'
                 ],
+                'estadisticas' => [
+                    'color' => 'bg-[#353F67]',
+                    'description' => 'Estadísticas Institucionales',
+                    'icon' => ' <svg   aria-hidden="true" xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15v4m6-6v6m6-4v4m6-6v6M3 11l6-5 6 5 5.5-5.5"/>
+</svg>'
+                ],
             ];
+
+
+
 
             $apartados = new WP_Query(array(
                 'post_type'      => 'page',
