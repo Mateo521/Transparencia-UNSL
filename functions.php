@@ -1,5 +1,14 @@
 <?php
 
+/**
+ * Transparencia UNSL — funciones del theme.
+ *
+ * @package Transparencia_UNSL
+ */
+
+/** Simulador Salarial — los montos se editan en inc/data/salarios-unsl.php */
+require_once get_template_directory() . '/inc/shortcodes/simulador-salarial.php';
+
 
 
 function mi_script_header()
@@ -18,7 +27,6 @@ function mi_script_header()
         'imgAccesibilidad' => get_template_directory_uri() . '/assets/a11y-toolbar-master/img/accesibilidad-blanco.png'
     ));
 }
-add_action('wp_enqueue_scripts', 'mi_script_header');
 add_action('wp_enqueue_scripts', 'mi_script_header');
 
 function unsl_transparencia_setup()

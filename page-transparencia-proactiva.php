@@ -15,7 +15,7 @@ get_header();
                 </li>
                 <li>
                     <div class="flex items-center">
-                        <svg class="w-4 h-4 text-navy-100 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg class="w-4 h-4 text-navy-500 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                         </svg>
                         <span class="text-white ml-1 font-medium">Transparencia Proactiva</span>
@@ -30,68 +30,46 @@ get_header();
         <!--div class="w-14 h-[3px] bg-navy-400 mb-8 rounded-full"></div-->
 
         <div class="font-sans text-navy-200 text-base sm:text-lg max-w-7xl  space-y-5 text-justify">
-            <p>La transparencia proactiva se entiende como una práctica institucional que va más allá de las obligaciones mínimas de publicación establecidas por la normativa. Implica la generación deliberada de información pública, construida en diálogo con actores relevantes de la sociedad, anticipando sus demandas y estructurando los datos en formatos accesibles y comprensibles. <br> En el proyecto Universidad Abierta, se expresa en la conformación de la Red Universidad Abierta, concebida como un espacio multisectorial de cocreación de la política de transparencia, donde participan organizaciones de reconocida trayectoria en acceso a la información y datos abiertos. Este enfoque reconoce que la legitimidad y eficacia de la apertura institucional depende, en gran medida, del diálogo sostenido con los usuarios de la información. Los acuerdos logrados en este espacio generan la disponibilidad de la información compartida en esta sección, que dada su naturaleza, se encuentra en permantente crecimiento.</p>
+            <p>La transparencia proactiva se entiende como una práctica institucional que va más allá de las obligaciones mínimas de publicación establecidas por la normativa. Implica la generación deliberada de información pública, construida en diálogo con actores relevantes de la sociedad, anticipando sus demandas y estructurando los datos en formatos accesibles y comprensibles.</p>
         </div>
     </div>
 </section>
 
 <section class="bg-stone-50 py-16 sm:py-24">
     <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <?php
             $config_categorias = [
-                'mision-y-vision' => [
+                'planificacion-y-metas' => [
                     'color' => 'bg-[#353F67]',
+                    'description' => 'Plan de Desarrollo Institucional de la UNSL.',
                     'icon' => '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>'
                 ],
-                'servicios-institucionales' => [
+                'formas-de-gobierno' => [
                     'color' => 'bg-[#353F67]',
+                    'description' => 'Detalle de la forma de gobierno de la UNSL.',
                     'icon' => '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>'
                 ],
-                'autoridades-y-designaciones' => [
+                'politicas-de-integridad' => [
                     'color' => 'bg-[#353F67]',
+                    'description' => 'Mecanismos y programas que conforman la política de integridad de la comunidad UNSL.',
                     'icon' => '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>'
                 ],
-                'declaraciones-juradas' => [
+                'normativas-y-actos-administrativos' => [
                     'color' => 'bg-[#353F67]',
+                    'description' => 'Normativa sobre Transparencia, textos normativos y actos administrativos de la UNSL.',
                     'icon' => '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>'
                 ],
-                'organigrama-y-personal' => [
+                'informes-de-gestion' => [
                     'color' => 'bg-[#353F67]',
+                    'description' => 'Informes de gestiones rectorales.',
                     'icon' => '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7" /></svg>'
                 ],
-                'escalas-salariales' => [
+                'produccion-editorial-y-bibliotecas' => [
                     'color' => 'bg-[#353F67]',
+                    'description' => 'Difusión de producción académica y científica y red de bibliotecas.',
                     'icon' => '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>'
                 ],
-                'presupuesto' => [
-                    'color' => 'bg-[#353F67]',
-                    'icon' => '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>'
-                ],
-                'compras-y-contrataciones' => [
-                    'color' => 'bg-[#353F67]',
-                    'icon' => '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>'
-                ],
-                'transferencia-de-fondos' => [
-                    'color' => 'bg-[#353F67]',
-                    'icon' => '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" /></svg>'
-                ],
-                'actos-administrativos' => [
-                    'color' => 'bg-[#353F67]',
-                    'icon' => '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>'
-                ],
-                'participacion-y-colaboracion' => [
-                    'color' => 'bg-[#353F67]',
-                    'icon' => '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10h4.757c1.246 0 2.257 1.01 2.257 2.257V20H5v-7.743C5 11.01 6.01 10 7.243 10H12v-2a2 2 0 114 0v2z" /></svg>'
-                ],
-                'gestion-de-la-informacion' => [
-                    'color' => 'bg-[#353F67]',
-                    'icon' => '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10h4.757c1.246 0 2.257 1.01 2.257 2.257V20H5v-7.743C5 11.01 6.01 10 7.243 10H12v-2a2 2 0 114 0v2z" /></svg>'
-                ],
-                'default' => [
-                    'color' => 'bg-[#353F67]',
-                    'icon' => '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>'
-                ]
             ];
 
             $apartados = new WP_Query(array(
@@ -108,9 +86,9 @@ get_header();
                     $config = isset($config_categorias[$slug]) ? $config_categorias[$slug] : $config_categorias['default'];
             ?>
                     <a href="<?php the_permalink(); ?>" class="group flex flex-col overflow-hidden rounded-t-2xl rounded-b-lg bg-white border border-stone-200 shadow-sm hover:shadow-xl  transition-all duration-300">
-                        <div class="<?php echo $config['color']; ?> p-5 flex items-center gap-4 text-white">
-                            <div class="flex-shrink-0 p-2.5  rounded-lg  ">
-                                <div class="w-6 h-6">
+                        <div class="<?php echo $config['color']; ?> p-3 flex items-center gap-4 text-white">
+                            <div class="flex-shrink-0  rounded-lg  "> <!--- p-2.5 -->
+                                <div class="w-8 h-8">
                                     <?php echo $config['icon']; ?>
                                 </div>
                             </div>
@@ -118,18 +96,12 @@ get_header();
                                 <?php the_title(); ?>
                             </h2>
                         </div>
-                        <div class="p-5 flex-grow flex flex-col bg-[#EAF5FB] justify-between">
-                            <!--p class="text-stone-500 text-[14px] leading-relaxed line-clamp-3 mb-4">
+                        <div class="px-15 py-6 flex-grow flex flex-col bg-[#EAF5FB] justify-between">
+                            <p class="text-stone-500 text-[14px] leading-relaxed line-clamp-3 mb-4">
                                 <?php
-                                echo get_the_excerpt() ? get_the_excerpt() : 'Información y normativa detallada sobre ' . mb_strtolower(get_the_title()) . '.';
+                                echo $config['description'];
                                 ?>
-                            </p-->
-                            <!--div class="flex items-center text-[11px] font-bold uppercase tracking-widest text-[#353F67] group-hover:translate-x-1 transition-transform">
-                                Ver más
-                                <svg class="w-4 h-4 ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </div-->
+                            </p>
                         </div>
                     </a>
             <?php

@@ -9,47 +9,95 @@ get_header();
 
 <?php while (have_posts()) : the_post(); ?>
 
-    <section class="bg-[#353F67] py-24">
-        <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
-            <nav class="flex text-sm font-sans text-navy-300 mb-6" aria-label="Breadcrumb">
+    <section class="relative pt-32 pb-16 sm:pt-40 sm:pb-20 overflow-hidden">
+
+        <div class="absolute inset-0 z-0">
+
+            <?php if (has_post_thumbnail()) : ?>
+
+                <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="<?php the_title_attribute(); ?>" class="w-full h-full object-cover object-center" />
+
+            <?php else : ?>
+
+                <img src="http://192.168.103.3/wp-content/themes/Carreras-UNSL/imagenes/carreras.jpg" alt="Fachada UNSL" class="w-full h-full object-cover object-center" onerror="this.src='https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2000&auto=format&fit=crop';" />
+
+            <?php endif; ?>
+
+
+
+            <div class="absolute size-full inset-0 bg-[#353F67]/80 mix-blend-multiply"></div>
+
+
+
+        </div>
+
+
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
+
+            <nav class="flex text-sm font-sans text-navy-300 mb-6 drop-shadow-sm" aria-label="Breadcrumb">
+
                 <ol class="inline-flex items-center space-x-2">
+
                     <li class="inline-flex items-center">
+
                         <a href="<?php echo esc_url(home_url('/')); ?>" class="hover:text-white transition-colors">Inicio</a>
+
                     </li>
-                    <?php
-                    $parent_id = wp_get_post_parent_id(get_the_ID());
-                    if ($parent_id) : ?>
-                        <li>
-                            <div class="flex items-center">
-                                <svg class="w-4 h-4 text-navy-100 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                                </svg>
-                                <a href="<?php echo esc_url(get_permalink($parent_id)); ?>" class="hover:text-white transition-colors">
-                                    <?php echo get_the_title($parent_id); ?>
-                                </a>
-                            </div>
-                        </li>
-                    <?php endif; ?>
+
                     <li>
+
                         <div class="flex items-center">
+
                             <svg class="w-4 h-4 text-navy-100 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+
                             </svg>
-                            <span class="text-white ml-1 font-medium" aria-current="page">Organigrama y Personal</span>
+
+                            <a href="<?php echo esc_url(home_url('/transparencia-activa')); ?>" class="hover:text-white transition-colors">Transparencia Activa</a>
+
                         </div>
+
                     </li>
+
+                    <li>
+
+                        <div class="flex items-center">
+
+                            <svg class="w-4 h-4 text-navy-100 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+
+                            </svg>
+
+                            <span class="text-white ml-1 font-medium" aria-current="page"><?php the_title(); ?></span>
+
+                        </div>
+
+                    </li>
+
                 </ol>
+
             </nav>
 
-            <h1 class="font-display text-3xl sm:text-4xl font-bold text-white leading-tight">
+
+
+            <h1 class="font-display text-4xl sm:text-5xl font-bold text-white leading-tight drop-shadow-md">
+
                 Organigrama y Personal
+
             </h1>
+
         </div>
+
     </section>
+
 
     <section class="bg-stone-50 py-16 sm:py-20 min-h-[50vh]">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
 
+            <h2 class="font-display text-2xl font-bold text-navy-900 mb-8 border-b border-stone-200 pb-4">Organigrama</h2>
 
 
 
@@ -164,6 +212,57 @@ get_header();
 
 
             <div class="mb-20">
+
+                <p class="text-stone-700 py-3">Las ordenanzas y antecedentes que dan sustento normativo a la estructura organizacional de
+                    gestión actual son las siguientes:</p>
+
+                <div class="space-y-4">
+
+
+                 <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/OCS27-25-Estructurta-de-Gestion.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
+
+                        <div class="flex-1">
+                            <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">OCS 27/2025 (período 2025-2028)</h3>
+                            <p class="font-sans text-xs text-stone-500 mt-0.5">Documento PDF</p>
+                        </div>
+                        <svg class="w-5 h-5 text-stone-300 group-hover:text-red-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                    </a>
+
+                     <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/09/OCS-41.2022-Estructura-de-Gestion-de-Rectorado.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
+
+                        <div class="flex-1">
+                            <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">OCS 41/2022 (período 2022-2025)</h3>
+                            <p class="font-sans text-xs text-stone-500 mt-0.5">Documento PDF</p>
+                        </div>
+                        <svg class="w-5 h-5 text-stone-300 group-hover:text-red-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                    </a>
+
+                     <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/09/OCS-39.2019-Estructura-de-Gestion-de-Rectorado.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
+
+                        <div class="flex-1">
+                            <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">OCS 39/2019 (período 2019-2022)</h3>
+                            <p class="font-sans text-xs text-stone-500 mt-0.5">Documento PDF</p>
+                        </div>
+                        <svg class="w-5 h-5 text-stone-300 group-hover:text-red-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                    </a>
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="mb-20">
                 <h2 class="font-display text-2xl font-bold text-navy-900 mb-8 border-b border-stone-200 pb-4">Listado de Personal</h2>
 
                 <div class="space-y-4">
@@ -196,41 +295,30 @@ get_header();
                     <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/OCS27-25-Estructurta-de-Gestion.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
 
                         <div class="flex-1">
-                            <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">Estructura de Gestión OCS 27-25</h3>
-                            <p class="font-sans text-xs text-stone-500 mt-0.5">Documento PDF</p>
-                        </div>
-                        <svg class="w-5 h-5 text-stone-300 group-hover:text-red-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                        </svg>
-                    </a>
-
-                    <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/04/OR17-22-Estructura-Administrativa.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
-
-                        <div class="flex-1">
-                            <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">Estructura Administrativa OR 17-22</h3>
-                            <p class="font-sans text-xs text-stone-500 mt-0.5">Documento PDF</p>
-                        </div>
-                        <svg class="w-5 h-5 text-stone-300 group-hover:text-red-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                        </svg>
-                    </a>
-
-                    <a href="https://www.unsl.edu.ar/index.php/menu/institucional/consejo_superior#gsc.tab=0" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-navy-400 hover:shadow-sm transition-all group">
-
-                        <div class="flex-1">
-                            <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-navy-700 transition-colors">Integrantes del Consejo Superior</h3>
+                            <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">Estructura de Gestión OCS 27-2025</h3>
                             <p class="font-sans text-xs text-stone-500 mt-0.5">Período 2025-2028</p>
                         </div>
-                        <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-100 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        <svg class="w-5 h-5 text-stone-300 group-hover:text-red-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                         </svg>
                     </a>
 
-                    <a href="https://www.unsl.edu.ar/index.php/menu/institucional/autoridades#gsc.tab=0" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-navy-400 hover:shadow-sm transition-all group">
+                    <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/09/OCS41-2022-Estructura-de-Gestion-de-Rectorado.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-red-400 hover:shadow-sm transition-all group">
 
                         <div class="flex-1">
-                            <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-navy-700 transition-colors">Nómina completa de Autoridades</h3>
-                            <p class="font-sans text-xs text-stone-500 mt-0.5">Portal Institucional UNSL</p>
+                            <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">Estructura de Gestión OCS 41-2022</h3>
+                            <p class="font-sans text-xs text-stone-500 mt-0.5">Período 2022-2025</p>
+                        </div>
+                        <svg class="w-5 h-5 text-stone-300 group-hover:text-red-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                    </a>
+
+                    <a href="https://transparencia.unsl.edu.ar/wp-content/uploads/2026/09/OCS39-2019-Estructura-de-Gestion-de-Rectorado.pdf" target="_blank" class="flex items-center gap-4 p-4 bg-white border border-stone-200 rounded-lg hover:border-navy-400 hover:shadow-sm transition-all group">
+
+                        <div class="flex-1">
+                            <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-red-700 transition-colors">Estructura de Gestión OCS 39-2019</h3>
+                            <p class="font-sans text-xs text-stone-500 mt-0.5">Período 2019-2022</p>
                         </div>
                         <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-100 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -239,9 +327,6 @@ get_header();
 
                 </div>
             </div>
-
-
-
 
             <div class="mt-16 py-4 px-3  flex items-center gap-3 text-stone-500 bg-stone-100 ">
                 <svg class="w-5 h-5 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">

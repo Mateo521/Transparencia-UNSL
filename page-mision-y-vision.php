@@ -54,6 +54,10 @@ get_header();
 
     <section class="bg-white py-16 sm:py-20">
         <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
+            <h2 class="font-display text-2xl font-bold text-navy-900 mb-8 border-b border-stone-200 pb-4">Misión</h2>
+
+
+
             <div class="prose prose-stone max-w-none font-sans text-stone-600 text-justify leading-relaxed space-y-5">
                 <p>
                     La Universidad Nacional de San Luis es una institución de educación superior, pública, gratuita y laica. Desarrolla funciones académicas, de investigación y de extensión; ofrece formación integral, revaloriza su historia y su patrimonio, y garantiza la vigencia de los principios de la Reforma Universitaria de 1918.
@@ -62,14 +66,21 @@ get_header();
                     Esta institución trabaja en la generación, difusión y transmisión de conocimientos para el desarrollo de una sociedad más justa, inclusiva e igualitaria, comprometida con los derechos humanos, el entorno y sus problemáticas, con la convicción de que el conocimiento es un pilar estratégico para la transformación y el desarrollo social.
                 </p>
 
+
+                <p class="prose prose-stone max-w-none font-sans text-stone-600 text-justify">Esta Misión emana de los fines enunciados en el Estatuto (Título I - Fines y Funciones - Artículo
+                    1° - p.1):</p>
                 <div class="my-10 pl-6  bg-stone-50 py-6 pr-6 rounded-r">
                     <p class="font-ui text-xs font-bold text-navy-800 uppercase tracking-widest mb-4">Estatuto de la UNSL (Art. 1°)</p>
                     <p class="text-stone-700 italic">
                         "a) Formar recursos humanos capacitados para la aplicación del conocimiento en el mejoramiento de las condiciones de vida de la sociedad y consustanciados con la obligación que se adquiere, junto con el saber, para con el Pueblo de su Nación.<br><br>
-                        b) Desarrollar el conocimiento científico y técnico con vistas a aumentar la comprensión del Universo y la ubicación del la persona en el mismo.<br><br>
+                        b) Desarrollar el conocimiento científico y técnico con vistas a aumentar la comprensión del Universo y la ubicación de la persona en el mismo.<br><br>
                         c) Difundir el conocimiento y todo tipo de cultura y participar activamente en la comunidad propendiendo a la formación de una opinión pública esclarecida y comprometida con el sistema de vida republicano y democrático."
                     </p>
                 </div>
+
+                <h2 class="font-display text-2xl font-bold text-navy-900 mb-8 border-b border-stone-200 pb-4">Visión</h2>
+
+
 
                 <p>La Universidad Nacional de San Luis se proyecta como una institución innovadora, inclusiva, que alienta el pensamiento libre y el espíritu crítico de su comunidad, con presencia activa y transformadora en su contexto. Una organización capaz de dialogar con su entorno, permeable a las demandas del medio, que construye colectivamente respuestas posibles y favorece procesos sostenibles de transformación social. Reafirma sus principios como universidad reformista, autónoma, cogobernada, democrática y valora la pluralidad de pensamiento y acción. La Universidad aspira a consolidarse como una reconocida institución del Siglo XXI, sin fronteras geográficas, comprometida firmemente con la educación pública de calidad y en la convicción de que el conocimiento es bien social y derecho humano.</p>
 

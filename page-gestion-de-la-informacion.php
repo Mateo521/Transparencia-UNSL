@@ -9,6 +9,7 @@ get_header();
 
 <?php while (have_posts()) : the_post(); ?>
 
+
     <section class="relative pt-32 pb-16 sm:pt-40 sm:pb-20 overflow-hidden">
         <div class="absolute inset-0 z-0">
             <?php if (has_post_thumbnail()) : ?>

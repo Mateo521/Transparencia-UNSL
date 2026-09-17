@@ -137,7 +137,7 @@ get_header();
                                 <p class="font-sans text-navy-900 font-medium text-[15px] group-hover:text-navy-700 transition-colors"><?php echo $sec['nombre']; ?></p>
                             </div>
 
-                            <div class="mt-4 flex items-center gap-1.5 text-xs font-ui font-semibold text-navy-100 opacity-0 group-hover:opacity-100 transition-opacity uppercase tracking-wide">
+                            <div class="mt-4 flex items-center gap-1.5 text-xs font-ui font-semibold text-navy-600  transition-opacity uppercase tracking-wide">
                                 <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
@@ -191,7 +191,7 @@ get_header();
                                 <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-navy-700 transition-colors">Integrantes del Consejo Superior</h3>
                                 <p class="font-sans text-xs text-stone-500 mt-0.5">Período 2025-2028</p>
                             </div>
-                            <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-100 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-600 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                             </svg>
                         </a>
@@ -202,7 +202,7 @@ get_header();
                                 <h3 class="font-ui font-semibold text-navy-900 text-sm group-hover:text-navy-700 transition-colors">Nómina completa de Autoridades</h3>
                                 <p class="font-sans text-xs text-stone-500 mt-0.5">Portal Institucional UNSL</p>
                             </div>
-                            <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-100 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="w-5 h-5 text-stone-300 group-hover:text-navy-600 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                             </svg>
                         </a>

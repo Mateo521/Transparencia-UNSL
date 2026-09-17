@@ -82,7 +82,7 @@ get_header();
                 'compras-y-contrataciones' => [
                     'color' => 'bg-[#353F67]',
                     'icon' => '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>',
-                    'descripcion' => 'UNSL publica las compras de bienes y servicios que realiza a través del Portal de Compras Públicas'
+                    'descripcion' => 'La UNSL publica las compras de bienes y servicios que realiza a través del Portal de Compras Públicas'
                 ],
                 'transferencia-de-fondos' => [
                     'color' => 'bg-[#353F67]',
@@ -97,15 +97,15 @@ get_header();
                 'participacion-y-colaboracion' => [
                     'color' => 'bg-[#353F67]',
                     'icon' => '<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10h4.757c1.246 0 2.257 1.01 2.257 2.257V20H5v-7.743C5 11.01 6.01 10 7.243 10H12v-2a2 2 0 114 0v2z" /></svg>',
-                    'descripcion' => 'Mecanismos de vinculación con el medio, canales de participación y acuerdos de colaboración'
+                    'descripcion' => 'Mecanismos de participación y de vinculación con el medio.'
                 ],
                 'auditorias-y-evaluaciones' => [
                     'color' => 'bg-[#353F67]',
                     'icon' => '<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24">
-  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 3v4a1 1 0 0 1-1 1H5m8 7.5 2.5 2.5M19 4v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1Zm-5 9.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"/>
+<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 3v4a1 1 0 0 1-1 1H5m8 7.5 2.5 2.5M19 4v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1Zm-5 9.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"/>
 </svg>
 ',
-                    'descripcion' => 'Detalles de auditorías realizadas y procesos de evaluacion y autoevaluación institucional'
+                    'descripcion' => 'Auditorías y Procesos de Autoevaluación y Evaluación Institucional'
                 ],
                 'gestion-de-la-informacion' => [
                     'color' => 'bg-[#353F67]',
